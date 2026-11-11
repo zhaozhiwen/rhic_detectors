@@ -7,7 +7,7 @@ updated: 2026-11-09
 
 # STAR Barrel Electromagnetic Calorimeter (BEMC)
 
-Pb/scintillator sampling calorimeter at \|η\| ≤ 1 inside the solenoid coil, with a gas shower-maximum detector (SMD) and preshower. Source: design paper [[beddo2003-bemc-note]] (NIM A 499 (2003) 725, RHIC special issue). It gives design and test-beam numbers only; **no measured in-situ tower resolution**. Endcap counterpart: [[star-eemc]].
+Pb/scintillator sampling calorimeter at \|η\| ≤ 1 inside the solenoid coil, with a gas shower-maximum detector (SMD) and preshower. Source: design paper [beddo2003-bemc-note](../../raw/beddo2003-bemc-note.md) (NIM A 499 (2003) 725, RHIC special issue). It gives design and test-beam numbers only; **no measured in-situ tower resolution**. Endcap counterpart: [star-eemc](star-eemc.md).
 
 | Item | Value |
 |---|---|
@@ -22,7 +22,7 @@ Pb/scintillator sampling calorimeter at \|η\| ≤ 1 inside the solenoid coil, w
 | Electronics | 12-bit flash ADCs every crossing; Level-0 high-tower and 300 patch sums within 700 ns |
 | Resolution | design ≈ 14%/√E ⊕ 1.5%; SMD test beam σ/E = 12% + 86%/√E (the HTML drops the √; formulas from the PDF) |
 | Installation | staged: first ≈ 25% for the 2001 run, then ≈ 25% per year |
-| Status (Oct 2026) | "All", in situ, no readout [[star2026-detector-status-note]] |
+| Status (Oct 2026) | "All", in situ, no readout [star2026-detector-status-note](../../raw/star2026-detector-status-note.md) |
 
 ## Geometry checks [note]
 - 120 × 40 = 4800 towers ✓; 60 × 6° = 360° ✓.
@@ -30,9 +30,9 @@ Pb/scintillator sampling calorimeter at \|η\| ≤ 1 inside the solenoid coil, w
 - η = 1 at z = r sinh 1 = 262.7 cm (front) to 298.3 cm (back) → 293 cm module length fits a projective η = 1 end ≈.
 
 ## Links to other systems [note]
-- **Barrel TOF**: BEMC front face (r = 223.5 cm) is the outer limit for the TOF trays (~220 cm); both use 60 × 6° in φ ([[star-barrel-tof]]).
-- **MTD absorber**: the BEMC (≈ 0.7 λ_I) and the 30 magnet flux-return bars (counted in Beddo Fig. 1, 12° spacing) are the hadron absorber in front of the MTD ([[star-magnet-absorber]]). BEMC fibres and PMT boxes run out between the bars; the MTD trays sit on the BEMC PMT boxes at ~400 cm [[yang2014-mtd-cosmic-calibration-note]] ([[star-mtd]]).
-- **EEMC** reuses the BEMC tower electronics ([[star-eemc]]).
+- **Barrel TOF**: BEMC front face (r = 223.5 cm) is the outer limit for the TOF trays (~220 cm); both use 60 × 6° in φ ([star-barrel-tof](star-barrel-tof.md)).
+- **MTD absorber**: the BEMC (≈ 0.7 λ_I) and the 30 magnet flux-return bars (counted in Beddo Fig. 1, 12° spacing) are the hadron absorber in front of the MTD ([star-magnet-absorber](star-magnet-absorber.md)). BEMC fibres and PMT boxes run out between the bars; the MTD trays sit on the BEMC PMT boxes at ~400 cm [yang2014-mtd-cosmic-calibration-note](../../raw/yang2014-mtd-cosmic-calibration-note.md) ([star-mtd](star-mtd.md)).
+- **EEMC** reuses the BEMC tower electronics ([star-eemc](star-eemc.md)).
 
 ## Related
-[[star-eemc]] · [[star-magnet-absorber]] · [[star-barrel-tof]] · [[star-mtd]] · [[rhic-detector-status]]
+[star-eemc](star-eemc.md) · [star-magnet-absorber](star-magnet-absorber.md) · [star-barrel-tof](star-barrel-tof.md) · [star-mtd](star-mtd.md) · [rhic-detector-status](rhic-detector-status.md)

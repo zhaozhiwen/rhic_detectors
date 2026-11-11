@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Llope 2012 — Curated Notes
 
-> **Full source:** [[llope2012-star-mrpc-systems]] · Companion notes to [[llope2012-star-mrpc-systems]] (full source; a full-content paraphrase).
+> **Full source:** [llope2012-star-mrpc-systems](llope2012-star-mrpc-systems.md) · Companion notes to [llope2012-star-mrpc-systems](llope2012-star-mrpc-systems.md) (full source; a full-content paraphrase).
 > **DOI:** https://doi.org/10.1016/j.nima.2010.07.086 · arXiv: none
 
 ## Bibliographic
@@ -117,6 +117,6 @@ Primary single source for the as-built STAR barrel TOF counts (120 trays, 3840 M
 
 ## Related
 
-- Synthesis: [[star-barrel-tof]] · [[star-mtd]] · [[mrpc-technology]] · [[star-daq-trigger]] · [[star-magnet-absorber]] · [[open-questions]]
-- Notes: [[shao2002-mrpc-beam-test-note]] · [[wu2007-star-barrel-tof-note]] · [[ruan2009-mtd-concept-note]] (ref. [14], MTD concept and MTD7) · [[yang2014-mtd-cosmic-calibration-note]] · [[huang2016-mtd-muon-id-note]] · [[beddo2003-bemc-note]] (BEMC part of the MTD absorber)
-- [[schambach2006-star-tof-electronics-note]] — 2006 design paper on the same TINO/TDIG/TCPU/THUB electronics (board internals, HPTDC arithmetic, DAQ link); prints the pad as 3.3 cm × 6.1 cm vs 3.5 × 6.1 cm² here, and glass 0.7/0.55 mm vs 1.1/0.54 mm (unresolved, [[open-questions]] #16)
+- Synthesis: [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-mtd](../wiki/synthesis/star-mtd.md) · [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [star-magnet-absorber](../wiki/synthesis/star-magnet-absorber.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [shao2002-mrpc-beam-test-note](shao2002-mrpc-beam-test-note.md) · [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md) · [ruan2009-mtd-concept-note](ruan2009-mtd-concept-note.md) (ref. [14], MTD concept and MTD7) · [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md) · [huang2016-mtd-muon-id-note](huang2016-mtd-muon-id-note.md) · [beddo2003-bemc-note](beddo2003-bemc-note.md) (BEMC part of the MTD absorber)
+- [schambach2006-star-tof-electronics-note](schambach2006-star-tof-electronics-note.md) — 2006 design paper on the same TINO/TDIG/TCPU/THUB electronics (board internals, HPTDC arithmetic, DAQ link); prints the pad as 3.3 cm × 6.1 cm vs 3.5 × 6.1 cm² here, and glass 0.7/0.55 mm vs 1.1/0.54 mm (unresolved, [open-questions](../wiki/synthesis/open-questions.md) #16)

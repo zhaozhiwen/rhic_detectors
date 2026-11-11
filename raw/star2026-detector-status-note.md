@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # STAR Detector Status, October 2026 — Curated Notes
 
-> **Full source:** [[star2026-detector-status]] · Companion notes to [[star2026-detector-status]] (full source).
+> **Full source:** [star2026-detector-status](star2026-detector-status.md) · Companion notes to [star2026-detector-status](star2026-detector-status.md) (full source).
 > **Links:** no DOI (status sheet) · **PDF:** `assets/star2026-detector-status/source.pdf`
 
 ## Bibliographic / source
@@ -67,17 +67,17 @@ Inventory of what remains of each STAR subsystem in October 2026 and whether it 
 
 ## Source issues and caveats
 
-- Empty row between "sTGC" and "Endcap EMCal" with no section heading; so the grouping of Endcap EMCal, Endcap TOF and FST is ambiguous. **[note]** The FST is a forward-upgrade tracker ([[wang2024-star-forward-upgrade-note]]), so the block probably continues "Forward Detectors".
+- Empty row between "sTGC" and "Endcap EMCal" with no section heading; so the grouping of Endcap EMCal, Endcap TOF and FST is ambiguous. **[note]** The FST is a forward-upgrade tracker ([wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md)), so the block probably continues "Forward Detectors".
 - BBC availability cell is empty.
-- **[note]** "FST: One of two halves (3 layers)" read together with the 3-disk FST of [[wang2024-star-forward-upgrade-note]] suggests one half of each of the 3 disks remains; the sheet does not say so.
-- **[note]** "Forward EMCal" and "Forward HCal" are taken to be the FCS ECal and HCal ([[ruan2026-fcs-specs-email-note]]); the sheet uses no acronym.
+- **[note]** "FST: One of two halves (3 layers)" read together with the 3-disk FST of [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) suggests one half of each of the 3 disks remains; the sheet does not say so.
+- **[note]** "Forward EMCal" and "Forward HCal" are taken to be the FCS ECal and HCal ([ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md)); the sheet uses no acronym.
 - Not peer-reviewed; internal/collaboration material published with Zhiwen's agreement.
 
 ## Relevance
 
-Current-state anchor for [[rhic-detector-status]]: tells which STAR hardware still physically exists in October 2026 — the barrel TOF (minus 8 trays), half the MTD, the BEMC and EEMC remain in situ without readout; the FCS calorimeters remain in situ; the FST (one half) and sTGC are dismounted. Feeds the hardware-availability sections of [[star-barrel-tof]], [[star-mtd]], [[star-bemc]], [[star-eemc]], [[star-fcs]] and the trigger-detector context in [[star-daq-trigger]].
+Current-state anchor for [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md): tells which STAR hardware still physically exists in October 2026 — the barrel TOF (minus 8 trays), half the MTD, the BEMC and EEMC remain in situ without readout; the FCS calorimeters remain in situ; the FST (one half) and sTGC are dismounted. Feeds the hardware-availability sections of [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md), [star-mtd](../wiki/synthesis/star-mtd.md), [star-bemc](../wiki/synthesis/star-bemc.md), [star-eemc](../wiki/synthesis/star-eemc.md), [star-fcs](../wiki/synthesis/star-fcs.md) and the trigger-detector context in [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md).
 
 ## Related
 
-- Synthesis: [[rhic-detector-status]] · [[star-barrel-tof]] · [[star-mtd]] · [[star-bemc]] · [[star-eemc]] · [[star-fcs]] · [[star-daq-trigger]] · [[mrpc-technology]] · [[open-questions]]
-- Notes: [[wu2007-star-barrel-tof-note]] · [[llope2012-star-mrpc-systems-note]] · [[ruan2009-mtd-concept-note]] · [[huang2016-mtd-muon-id-note]] · [[beddo2003-bemc-note]] · [[star2003-eemc-note]] · [[wang2024-star-forward-upgrade-note]] · [[gagliardi2022-star-forward-upgrade-talk-note]] · [[ruan2026-fcs-specs-email-note]]
+- Synthesis: [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-mtd](../wiki/synthesis/star-mtd.md) · [star-bemc](../wiki/synthesis/star-bemc.md) · [star-eemc](../wiki/synthesis/star-eemc.md) · [star-fcs](../wiki/synthesis/star-fcs.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md) · [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) · [ruan2009-mtd-concept-note](ruan2009-mtd-concept-note.md) · [huang2016-mtd-muon-id-note](huang2016-mtd-muon-id-note.md) · [beddo2003-bemc-note](beddo2003-bemc-note.md) · [star2003-eemc-note](star2003-eemc-note.md) · [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) · [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md)

@@ -18,14 +18,14 @@ versions_checked: 2026-11-09
 
 # Beddo 2003 — Curated Notes
 
-> **Full source:** [[beddo2003-bemc]] · Companion notes to [[beddo2003-bemc]] (full source; a full-content paraphrase).
+> **Full source:** [beddo2003-bemc](beddo2003-bemc.md) · Companion notes to [beddo2003-bemc](beddo2003-bemc.md) (full source; a full-content paraphrase).
 > **DOI:** https://doi.org/10.1016/S0168-9002(02)01970-8 · arXiv: none
 
 ## Bibliographic
 
 - **Title:** The STAR Barrel Electromagnetic Calorimeter
 - **Authors:** M. Beddo et al., 102 authors (author list from PDF p. 1); corresponding author T.M. Cormier (Wayne State).
-- **Journal:** Nucl. Instrum. Meth. A 499 (2003) 725–739, RHIC special issue; immediately precedes the EEMC paper ([[star2003-eemc-note]], pp. 740–750).
+- **Journal:** Nucl. Instrum. Meth. A 499 (2003) 725–739, RHIC special issue; immediately precedes the EEMC paper ([star2003-eemc-note](star2003-eemc-note.md), pp. 740–750).
 
 ## What kind of paper
 
@@ -119,5 +119,5 @@ Defines the BEMC geometry that bounds the barrel TOF from outside (front face r 
 
 ## Related
 
-- Synthesis: [[star-bemc]] · [[star-eemc]] · [[star-daq-trigger]] · [[star-magnet-absorber]] · [[pi-mu-separation-calorimetry]] · [[star-barrel-tof]] · [[star-mtd]] · [[open-questions]]
-- Notes: [[star2003-eemc-note]] (companion endcap paper) · [[llope2012-star-mrpc-systems-note]] (MTD absorber "≈6 interaction lengths" incl. BEMC) · [[ruan2009-mtd-concept-note]]
+- Synthesis: [star-bemc](../wiki/synthesis/star-bemc.md) · [star-eemc](../wiki/synthesis/star-eemc.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [star-magnet-absorber](../wiki/synthesis/star-magnet-absorber.md) · [pi-mu-separation-calorimetry](../wiki/synthesis/pi-mu-separation-calorimetry.md) · [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-mtd](../wiki/synthesis/star-mtd.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [star2003-eemc-note](star2003-eemc-note.md) (companion endcap paper) · [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (MTD absorber "≈6 interaction lengths" incl. BEMC) · [ruan2009-mtd-concept-note](ruan2009-mtd-concept-note.md)

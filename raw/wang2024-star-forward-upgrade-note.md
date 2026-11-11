@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Wang 2024 — Curated Notes
 
-> **Full source:** [[wang2024-star-forward-upgrade]] · Companion notes to [[wang2024-star-forward-upgrade]] (full source).
+> **Full source:** [wang2024-star-forward-upgrade](wang2024-star-forward-upgrade.md) · Companion notes to [wang2024-star-forward-upgrade](wang2024-star-forward-upgrade.md) (full source).
 > **DOI:** [10.1051/epjconf/202429616003](https://doi.org/10.1051/epjconf/202429616003) · **PDF:** `assets/wang2024-star-forward-upgrade/source.pdf`
 
 ## Bibliographic / source
@@ -63,7 +63,7 @@ Status report; methods described only qualitatively (CA tracking, π⁰ iterativ
 - Fig. 3 maps carry no "before"/"after" labels; ordering inferred from the caption.
 - FTT range "300 cm to 360 cm" is rounded (talk slides: last disk at 361 cm).
 
-## FCS cross-checks (vs [[ruan2026-fcs-specs-email-note]] and the unpublished QM2023 slides, from the Layer-3 file)
+## FCS cross-checks (vs [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) and the unpublished QM2023 slides, from the Layer-3 file)
 
 - Channel counts agree: ECal 1496 = 2 × 22 × 34; HCal 520 = 2 × 13 × 20.
 - Location agrees: "about 7 m" vs ECal front z = 710.16 cm, HCal front z = 782.63 cm.
@@ -71,13 +71,13 @@ Status report; methods described only qualitatively (CA tracking, π⁰ iterativ
 - η: paper 2.5 < η < 4 vs email "roughly 2.2 < eta < 4.3" — the 2.2 is the outer geometric corner (ECal corner η = 2.23, outer edge 2.46; HCal corner 2.27).
 - **ECal tower length:** QM2023 slides 33 cm vs email 37.73 cm stack depth — unexplained.
 - **ECal depth in λ:** slides 0.85 λ_I vs email 0.93 λ (recomputed from the layer stack: 0.90 λ_I); X₀ agrees (18 vs 18.1; recomputed 18.0).
-- **Readout end:** paper "SiPM readout electronics on the front face" vs email ECal WLS fibres "read out at the back" — cannot be resolved from these sources. See [[open-questions]].
+- **Readout end:** paper "SiPM readout electronics on the front face" vs email ECal WLS fibres "read out at the back" — cannot be resolved from these sources. See [open-questions](../wiki/synthesis/open-questions.md).
 
 ## Relevance
 
-Most recent peer-reviewed description of the as-built STAR forward upgrade ([[star-fcs]]) and its first performance in Run22: confirms channel counts, PHENIX-module ECal, Fe/scint HCal, SiPM radiation monitoring and π⁰ calibration. The tracking (FST, FTT) is context for track–calorimeter matching. For the October 2026 hardware status see [[star2026-detector-status-note]] and [[rhic-detector-status]].
+Most recent peer-reviewed description of the as-built STAR forward upgrade ([star-fcs](../wiki/synthesis/star-fcs.md)) and its first performance in Run22: confirms channel counts, PHENIX-module ECal, Fe/scint HCal, SiPM radiation monitoring and π⁰ calibration. The tracking (FST, FTT) is context for track–calorimeter matching. For the October 2026 hardware status see [star2026-detector-status-note](star2026-detector-status-note.md) and [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md).
 
 ## Related
 
-- Synthesis: [[star-fcs]] · [[rhic-detector-status]] · [[star-daq-trigger]] · [[open-questions]]
-- Notes: [[tsai2015-fcs-prototype-note]] (2014 prototype) · [[gagliardi2022-star-forward-upgrade-talk-note]] (2022 talk: specs, triggers, Run 22) · [[ruan2026-fcs-specs-email-note]] (construction specs) · [[star2026-detector-status-note]]
+- Synthesis: [star-fcs](../wiki/synthesis/star-fcs.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md) (2014 prototype) · [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) (2022 talk: specs, triggers, Run 22) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (construction specs) · [star2026-detector-status-note](star2026-detector-status-note.md)

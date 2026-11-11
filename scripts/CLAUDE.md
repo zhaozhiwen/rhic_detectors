@@ -22,7 +22,7 @@ If running locally on Windows: `lint.py` works anywhere with Python 3; `ingest_c
 
 | Script | Purpose | Usage |
 |---|---|---|
-| `lint.py` | Wikilink resolution, image existence (skipped when the git-ignored `raw/assets/` is absent), raw frontmatter (presence, `type`, `source_type`, `captured_as`, `vision_model`), companion + full↔note pairing, `list.md` coverage, version metadata out of full sources, stale "not ingested" status, tail truncation — across `raw/*.md` and `wiki/` only | `python3 scripts/lint.py` |
+| `lint.py` | No `[[wikilinks]]`, relative Markdown link resolution, image existence (skipped when the git-ignored `raw/assets/` is absent), raw frontmatter (presence, `type`, `source_type`, `captured_as`, `vision_model`), companion + full↔note pairing, `list.md` coverage, version metadata out of full sources, stale "not ingested" status, tail truncation — across `raw/*.md` and `wiki/` only | `python3 scripts/lint.py` |
 | `ingest_clean.py` | Pandoc-converted ar5iv / arXiv HTML → wiki-ready GFM markdown body (Route 2). Strips ar5iv UI, fixes image paths, converts math, collapses equation tables, etc. The output is the input to the Layer 3 paraphrase, not the Layer 3 file itself | `python3 scripts/ingest_clean.py <arxiv_id> <slug> [<input.html.md>] [<output.md>]` |
 
 ## When to add a new script

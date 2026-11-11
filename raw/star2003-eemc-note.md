@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Allgower 2003 — STAR EEMC — curated notes
 
-> **Full source:** [[star2003-eemc]] · Companion notes to [[star2003-eemc]] (full source; a full-content paraphrase).
+> **Full source:** [star2003-eemc](star2003-eemc.md) · Companion notes to [star2003-eemc](star2003-eemc.md) (full source; a full-content paraphrase).
 
 Links: DOI <https://doi.org/10.1016/S0168-9002(02)01971-X>
 
@@ -102,9 +102,9 @@ Design description; PYTHIA + GEANT simulations (π⁰/γ via SMD peak-integral v
 
 ## Relevance
 
-Reference design of the STAR forward EM calorimeter (1.086 ≤ η ≤ 2.00): stack, SMD and pre/postshower layout and the e/h and π⁰/γ strategy. Current status of the EEMC is tracked in [[rhic-detector-status]].
+Reference design of the STAR forward EM calorimeter (1.086 ≤ η ≤ 2.00): stack, SMD and pre/postshower layout and the e/h and π⁰/γ strategy. Current status of the EEMC is tracked in [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md).
 
 ## Related
 
-- Synthesis: [[star-eemc]] · [[star-bemc]] · [[star-daq-trigger]] · [[pi-mu-separation-calorimetry]] · [[star-fcs]] · [[rhic-detector-status]] · [[open-questions]]
-- Other notes: [[beddo2003-bemc-note]] (barrel EMC; **[note]** the companion identifies it as the preceding article in the same issue) · [[tsai2015-fcs-prototype-note]] · [[wang2024-star-forward-upgrade-note]]
+- Synthesis: [star-eemc](../wiki/synthesis/star-eemc.md) · [star-bemc](../wiki/synthesis/star-bemc.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [pi-mu-separation-calorimetry](../wiki/synthesis/pi-mu-separation-calorimetry.md) · [star-fcs](../wiki/synthesis/star-fcs.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Other notes: [beddo2003-bemc-note](beddo2003-bemc-note.md) (barrel EMC; **[note]** the companion identifies it as the preceding article in the same issue) · [tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md) · [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md)

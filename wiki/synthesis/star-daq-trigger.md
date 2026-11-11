@@ -7,11 +7,11 @@ updated: 2026-11-10
 
 # STAR DAQ and trigger path for the BTOF and MTD
 
-**Same TOF readout chain for both. The papers spell it out for the BTOF; for the MTD they say only "STAR TOF electronics" and do not describe its path into STAR DAQ** ([[open-questions]] #14). Detector pages: [[star-barrel-tof]], [[star-mtd]]; front-end comparison: [[mrpc-technology]].
+**Same TOF readout chain for both. The papers spell it out for the BTOF; for the MTD they say only "STAR TOF electronics" and do not describe its path into STAR DAQ** ([open-questions](open-questions.md) #14). Detector pages: [star-barrel-tof](star-barrel-tof.md), [star-mtd](star-mtd.md); front-end comparison: [mrpc-technology](mrpc-technology.md).
 
-## BTOF chain [[llope2012-star-mrpc-systems-note]] · [[schambach2006-star-tof-electronics-note]]
+## BTOF chain [llope2012-star-mrpc-systems-note](../../raw/llope2012-star-mrpc-systems-note.md) · [schambach2006-star-tof-electronics-note](../../raw/schambach2006-star-tof-electronics-note.md)
 
-Llope 2012 describes the as-built chain; the 2006 electronics design paper [[schambach2006-star-tof-electronics-note]] gives the board internals, HPTDC arithmetic, cabling and the DAQ link. Values below are Llope 2012 unless marked (2006).
+Llope 2012 describes the as-built chain; the 2006 electronics design paper [schambach2006-star-tof-electronics-note](../../raw/schambach2006-star-tof-electronics-note.md) gives the board internals, HPTDC arithmetic, cabling and the DAQ link. Values below are Llope 2012 unless marked (2006).
 
 | Stage | Location | Role |
 |---|---|---|
@@ -24,16 +24,16 @@ Llope 2012 describes the as-built chain; the 2006 electronics design paper [[sch
 
 Per tray: 8 TINO, 8 TDIG, 1 TCPU, 192 channels, ~100 W, water-cooled.
 
-**HPTDC timing** [[schambach2006-star-tof-electronics-note]]: 40 MHz input clock × PLL → 320 MHz (3.125 ns); 32-tap DLL → 97.66 ps per LSB; four samples offset by a 4-tap RC network → **24.41 ps** bin (Llope 2012's "~24.4 ps"). A clock-synchronous counter extends the range. Buffering: per-channel FIFO → 256-deep latency buffers → trigger matching (programmable window on trigger time tags) → 256-deep readout FIFO, read over a parallel (8 or 32 bit) or serial bus; untriggered mode sends every hit to the readout FIFO.
+**HPTDC timing** [schambach2006-star-tof-electronics-note](../../raw/schambach2006-star-tof-electronics-note.md): 40 MHz input clock × PLL → 320 MHz (3.125 ns); 32-tap DLL → 97.66 ps per LSB; four samples offset by a 4-tap RC network → **24.41 ps** bin (Llope 2012's "~24.4 ps"). A clock-synchronous counter extends the range. Buffering: per-channel FIFO → 256-deep latency buffers → trigger matching (programmable window on trigger time tags) → 256-deep readout FIFO, read over a parallel (8 or 32 bit) or serial bus; untriggered mode sends every hit to the readout FIFO.
 
-**Timing budget (2006 design)** [[schambach2006-star-tof-electronics-note]]: total ≤ 100 ps after corrections, with 50 ps from the VPD start and 30 ps from corrections ⇒ stop < 80 ps; TOF = t_stop − t_start, start and stops digitized by the same electronics.
+**Timing budget (2006 design)** [schambach2006-star-tof-electronics-note](../../raw/schambach2006-star-tof-electronics-note.md): total ≤ 100 ps after corrections, with 50 ps from the VPD start and 30 ps from corrections ⇒ stop < 80 ps; TOF = t_stop − t_start, start and stops digitized by the same electronics.
 
 **Still open for the BTOF chain:** the paper gives no data, trigger or latency rates behind the buffering, and does not name the DDL (Llope 2012 does); later changes to the DAQ receiver (after 2006) are not described in any ingested source.
 
 ## MTD
-- **2007–08 prototype (MTD7)**: simple front end, long cables to STAR trigger digitizer boards: 8-bit ADC, 30 mV discriminator, TAC gated by the RHIC clock. ADC and TAC values went into the Level-0 trigger, decided in < 1.5 µs; a hit on ≥ 1 strip triggered DAQ [[ruan2009-mtd-concept-note]]. Timing in STAR ≈ 300 ps [[llope2012-star-mrpc-systems-note]].
-- **From 2009 (MTD9) and the final system**: "STAR TOF electronics" (Llope 2012), "very similar to the STAR TOF system": HPTDC, 40 MHz, 24.4 ps LSB [[yang2014-mtd-cosmic-calibration-note]].
-- **Trigger**: each module end sends an analog multiplicity (OR of all strips) to Level-0, used to select events with MTD hits and to trigger on prompt hits only [[yang2014-mtd-cosmic-calibration-note]]. Single-muon and dimuon triggers count hits inside an online timing window; the 2013 dimuon trigger required ≥ 2 MTD hits in coincidence with the bunch crossing [[huang2016-mtd-muon-id-note]]. A Run-22 trigger table lists a dimuon trigger at 236 Hz [[gagliardi2022-star-forward-upgrade-talk-note]].
+- **2007–08 prototype (MTD7)**: simple front end, long cables to STAR trigger digitizer boards: 8-bit ADC, 30 mV discriminator, TAC gated by the RHIC clock. ADC and TAC values went into the Level-0 trigger, decided in < 1.5 µs; a hit on ≥ 1 strip triggered DAQ [ruan2009-mtd-concept-note](../../raw/ruan2009-mtd-concept-note.md). Timing in STAR ≈ 300 ps [llope2012-star-mrpc-systems-note](../../raw/llope2012-star-mrpc-systems-note.md).
+- **From 2009 (MTD9) and the final system**: "STAR TOF electronics" (Llope 2012), "very similar to the STAR TOF system": HPTDC, 40 MHz, 24.4 ps LSB [yang2014-mtd-cosmic-calibration-note](../../raw/yang2014-mtd-cosmic-calibration-note.md).
+- **Trigger**: each module end sends an analog multiplicity (OR of all strips) to Level-0, used to select events with MTD hits and to trigger on prompt hits only [yang2014-mtd-cosmic-calibration-note](../../raw/yang2014-mtd-cosmic-calibration-note.md). Single-muon and dimuon triggers count hits inside an online timing window; the 2013 dimuon trigger required ≥ 2 MTD hits in coincidence with the bunch crossing [huang2016-mtd-muon-id-note](../../raw/huang2016-mtd-muon-id-note.md). A Run-22 trigger table lists a dimuon trigger at 236 Hz [gagliardi2022-star-forward-upgrade-talk-note](../../raw/gagliardi2022-star-forward-upgrade-talk-note.md).
 - **Not stated in any paper**: the MTD's path into STAR DAQ (own THUB/DDL or shared) and the trigger boards that receive its signals.
 
 [note: from memory, unverified] The MTD shares the TOF's THUB and DDL path into DAQ, and its trigger signals go through STAR's QT trigger boards. Check against a dedicated MTD system paper or the STAR trigger/DAQ papers below before quoting.
@@ -42,7 +42,7 @@ Per tray: 8 TINO, 8 TDIG, 1 TCPU, 192 channels, ~100 W, water-cooled.
 - J.M. Landgraf et al., "An overview of the STAR DAQ system", Nucl. Instrum. Meth. A 499 (2003) 762 — baseline (2001-era) DAQ architecture. Free PDF: https://www.star.bnl.gov/public/tpc/NimPapers/daq/daq_nim.pdf
 - F.S. Bieser et al., "The STAR trigger", Nucl. Instrum. Meth. A 499 (2003) 766 — Level-0 trigger, where the MTD trigger signals go.
 - J. Landgraf, "The Design and Implementation of the STAR DAQ system", talk at *Triggering Discoveries in High Energy Physics*, 9–14 September 2013: https://indico.cern.ch/event/246374/contributions/542866/ — how the DAQ evolved over 13 years as detectors such as the TOF and MTD were added. No slides attached on the indico page.
-- Both NIM papers are in the NIM A 499 (2003) RHIC special issue, as are the BEMC and EEMC papers ([[star-bemc]], [[star-eemc]]) and the STAR magnet paper ([[star-magnet-absorber]]); the issue is linked from the SoLID wiki *RHIC detectors* page: https://solid.jlab.org/wiki/index.php?title=RHIC_detectors
+- Both NIM papers are in the NIM A 499 (2003) RHIC special issue, as are the BEMC and EEMC papers ([star-bemc](star-bemc.md), [star-eemc](star-eemc.md)) and the STAR magnet paper ([star-magnet-absorber](star-magnet-absorber.md)); the issue is linked from the SoLID wiki *RHIC detectors* page: https://solid.jlab.org/wiki/index.php?title=RHIC_detectors
 
 ## Related
-[[star-barrel-tof]] · [[star-mtd]] · [[mrpc-technology]] · [[open-questions]]
+[star-barrel-tof](star-barrel-tof.md) · [star-mtd](star-mtd.md) · [mrpc-technology](mrpc-technology.md) · [open-questions](open-questions.md)

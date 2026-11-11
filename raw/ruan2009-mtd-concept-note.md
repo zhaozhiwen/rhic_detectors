@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Ruan 2009 — MTD concept — curated notes
 
-> **Full source:** [[ruan2009-mtd-concept]] · Companion notes to [[ruan2009-mtd-concept]] (full source; a full-content paraphrase).
+> **Full source:** [ruan2009-mtd-concept](ruan2009-mtd-concept.md) · Companion notes to [ruan2009-mtd-concept](ruan2009-mtd-concept.md) (full source; a full-content paraphrase).
 
 Links: DOI <https://doi.org/10.1088/0954-3899/36/9/095001> · arXiv <https://arxiv.org/abs/0904.3774>
 
@@ -110,7 +110,7 @@ Founding design document for the STAR MTD: backleg absorber geometry, long-MRPC 
 
 ## Related
 
-- Synthesis: [[star-mtd]] · [[mrpc-technology]] · [[star-magnet-absorber]] · [[pi-mu-separation-calorimetry]] · [[star-daq-trigger]] · [[star-barrel-tof]] · [[star-bemc]] · [[open-questions]]
-- Follow-ups: [[yang2014-mtd-cosmic-calibration-note]] (cosmic-ray calibration of the built MTD) · [[huang2016-mtd-muon-id-note]] (muon ID in 2013 p+p)
-- TOF/MRPC lineage: [[shao2002-mrpc-beam-test-note]] · [[wu2007-star-barrel-tof-note]] · [[llope2012-star-mrpc-systems-note]]
-- Absorber/calorimeter context: [[beddo2003-bemc-note]]
+- Synthesis: [star-mtd](../wiki/synthesis/star-mtd.md) · [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [star-magnet-absorber](../wiki/synthesis/star-magnet-absorber.md) · [pi-mu-separation-calorimetry](../wiki/synthesis/pi-mu-separation-calorimetry.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-bemc](../wiki/synthesis/star-bemc.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Follow-ups: [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md) (cosmic-ray calibration of the built MTD) · [huang2016-mtd-muon-id-note](huang2016-mtd-muon-id-note.md) (muon ID in 2013 p+p)
+- TOF/MRPC lineage: [shao2002-mrpc-beam-test-note](shao2002-mrpc-beam-test-note.md) · [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md) · [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md)
+- Absorber/calorimeter context: [beddo2003-bemc-note](beddo2003-bemc-note.md)

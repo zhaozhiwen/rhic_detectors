@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Tsai 2015 — Curated Notes
 
-> **Full source:** [[tsai2015-fcs-prototype]] · Companion notes to [[tsai2015-fcs-prototype]] (full source).
+> **Full source:** [tsai2015-fcs-prototype](tsai2015-fcs-prototype.md) · Companion notes to [tsai2015-fcs-prototype](tsai2015-fcs-prototype.md) (full source).
 > **DOI:** [10.1088/1742-6596/587/1/012053](https://doi.org/10.1088/1742-6596/587/1/012053) · **PDF:** `assets/tsai2015-fcs-prototype/source.pdf`
 
 ## Bibliographic / source
@@ -86,7 +86,7 @@ W/ScFi SPACal built by forming a fibre matrix, pouring W powder, replacing air w
 - **[note]** Estimated EM pixel saturation ≈ 10% at 32 GeV in one EM tower (57 600 pixels at 400 pixels/GeV), so "almost linear" may be optimistic at the top of the range (estimate in the Layer-3 file, not in the paper).
 - All results preliminary.
 
-## FCS cross-check: 2014 prototype vs as-built (from [[ruan2026-fcs-specs-email-note]])
+## FCS cross-check: 2014 prototype vs as-built (from [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md))
 
 | Item | 2014 prototype / proposal | As-built FCS (email) |
 |---|---|---|
@@ -100,13 +100,13 @@ W/ScFi SPACal built by forming a fibre matrix, pouring W powder, replacing air w
 | Total depth | ≈ 4.7 λ_I (derived) | ≈ 5.4 λ |
 
 - What survived: WLS-plate side readout of the HCal, SiPM readout throughout, ~10 cm HCal towers. The compensating Pb:scint ratio and the W/ScFi ECal were dropped; W/ScFi went on to EIC R&D.
-- **[note]** In the 2014 test beam the FCS prototype was read out **upstream** of the incoming beam (the EIC prototype downstream), with no performance difference between the two. Relevant to the as-built readout-end question (Wang 2024 "front face" vs email "read out at the back"); see [[open-questions]].
+- **[note]** In the 2014 test beam the FCS prototype was read out **upstream** of the incoming beam (the EIC prototype downstream), with no performance difference between the two. Relevant to the as-built readout-end question (Wang 2024 "front face" vs email "read out at the back"); see [open-questions](../wiki/synthesis/open-questions.md).
 
 ## Relevance
 
-Design history of the [[star-fcs]]: explains the origin of the SiPM readout, WLS-plate HCal light collection and LED/MIP calibration approach; quantifies what a compensating W/ScFi + Pb/scint system achieved before STAR chose re-used PHENIX modules and a steel HCal. HCal muon/MIP calibration is a reference point for [[pi-mu-separation-calorimetry]]. Not a source for as-built FCS parameters.
+Design history of the [star-fcs](../wiki/synthesis/star-fcs.md): explains the origin of the SiPM readout, WLS-plate HCal light collection and LED/MIP calibration approach; quantifies what a compensating W/ScFi + Pb/scint system achieved before STAR chose re-used PHENIX modules and a steel HCal. HCal muon/MIP calibration is a reference point for [pi-mu-separation-calorimetry](../wiki/synthesis/pi-mu-separation-calorimetry.md). Not a source for as-built FCS parameters.
 
 ## Related
 
-- Synthesis: [[star-fcs]] · [[pi-mu-separation-calorimetry]] · [[open-questions]]
-- Notes: [[wang2024-star-forward-upgrade-note]] (as-built status 2024) · [[gagliardi2022-star-forward-upgrade-talk-note]] (as-built specs, Run 22) · [[ruan2026-fcs-specs-email-note]] (construction specs) · [[star2026-detector-status-note]] (FCS status October 2026)
+- Synthesis: [star-fcs](../wiki/synthesis/star-fcs.md) · [pi-mu-separation-calorimetry](../wiki/synthesis/pi-mu-separation-calorimetry.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) (as-built status 2024) · [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) (as-built specs, Run 22) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (construction specs) · [star2026-detector-status-note](star2026-detector-status-note.md) (FCS status October 2026)

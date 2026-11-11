@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Lint check for the rhic_detectors LLM wiki (raw/ + wiki/ three-layer architecture).
 
-Checks wikilink resolution, image existence, frontmatter validity
+Checks relative Markdown link resolution (no Obsidian [[wikilinks]]: they do
+not render on GitHub), image existence, frontmatter validity
 (presence, type, source_type, captured_as, vision_model), companion
 fields, full<->note pairing, list.md coverage, version metadata kept out
 of full sources, stale "not ingested" status, and tail truncation.
-Inline-code spans and fenced code blocks are excluded from wikilink/image
+Inline-code spans and fenced code blocks are excluded from link/image
 checks.
 
 Scans ONLY raw/*.md (not raw/assets/), wiki/synthesis/*.md and
@@ -31,6 +32,9 @@ from collections import defaultdict
 
 
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\]")
+# Relative links to other wiki pages: [text](path/to/page.md) or (...md#heading).
+# Links are relative Markdown links (2026-11-11) so they work on GitHub and in Obsidian.
+MDLINK_RE = re.compile(r"(?<!!)\[[^\]\n]*\]\((?!https?:|mailto:)([^)\s#]+\.md)(?:#[^)\s]*)?\)")
 IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 INLINE_CODE_RE = re.compile(r"``[^`\n]+``|`[^`\n]+`")
 FENCE_RE = re.compile(r"^```")
@@ -69,7 +73,7 @@ def lint(root):
     raw = root / "raw"
     slug_set = collect_targets(root)
     issues = defaultdict(list)
-    stats = {"files_checked": 0, "wikilinks": 0, "images": 0, "images_skipped": 0}
+    stats = {"files_checked": 0, "links": 0, "images": 0, "images_skipped": 0}
     # raw/assets/ is git-ignored (public repo): without it, asset image refs
     # cannot be checked, so skip them instead of reporting every figure.
     have_assets = (raw / "assets").is_dir()
@@ -81,11 +85,14 @@ def lint(root):
 
         for ln, line in enumerate(scanned.split("\n"), 1):
             for m in WIKILINK_RE.finditer(line):
-                slug = m.group(1).strip()
-                stats["wikilinks"] += 1
-                if slug not in slug_set:
-                    issues["unresolved_wikilink"].append(
-                        f"{f.relative_to(root)}:{ln} [[{slug}]]"
+                issues["wikilink_syntax"].append(
+                    f"{f.relative_to(root)}:{ln} {m.group(0)} (use a relative Markdown link)"
+                )
+            for m in MDLINK_RE.finditer(line):
+                stats["links"] += 1
+                if not (f.parent / m.group(1)).resolve().exists():
+                    issues["unresolved_link"].append(
+                        f"{f.relative_to(root)}:{ln} {m.group(1)}"
                     )
             for m in IMAGE_RE.finditer(line):
                 path = m.group(1).strip()
@@ -143,11 +150,12 @@ def lint(root):
                             f"{f.relative_to(root)}: companion={comp}"
                         )
                     elif comp != "none":
-                        # Schema: the body must carry a real [[<slug>]] wikilink
-                        # to the companion, not just a plain-text filename.
-                        stem = comp[:-3] if comp.endswith(".md") else comp
-                        if not re.search(r"\[\[" + re.escape(stem) + r"(\||\]\])", content):
-                            issues["note_companion_not_wikilinked"].append(
+                        # Schema: the body must carry a real link to the
+                        # companion, not just a plain-text filename.
+                        comp_path = (raw / comp).resolve()
+                        if not any((f.parent / m.group(1)).resolve() == comp_path
+                                   for m in MDLINK_RE.finditer(strip_code(content))):
+                            issues["note_companion_not_linked"].append(
                                 str(f.relative_to(root)))
 
         # Tail-truncation heuristic (added 2026-06-04 after OneDrive sync
@@ -177,7 +185,7 @@ def lint(root):
     for s in orphan:
         issues["note_without_full"].append(s)
 
-    # Every raw source must be catalogued in wiki/list.md (as a [[slug]] wikilink,
+    # Every raw source must be catalogued in wiki/list.md (as a link to raw/<slug>.md,
     # the "Full source" column convention) -- added 2026-09-21 after an ingest found
     # the raw-sources table silently missing rows for 5 already-ingested papers
     # despite log.md recording that each ingest updated it. lint.py's wikilink check
@@ -187,9 +195,10 @@ def lint(root):
     # reading path and list.md as the flat raw-sources inventory.
     list_md = root / "wiki" / "list.md"
     if list_md.exists():
-        list_content = list_md.read_text(encoding="utf-8")
+        listed = {(list_md.parent / m.group(1)).resolve()
+                  for m in MDLINK_RE.finditer(strip_code(list_md.read_text(encoding="utf-8")))}
         for s in sorted(raw_full):
-            if f"[[{s}]]" not in list_content:
+            if (raw / f"{s}.md").resolve() not in listed:
                 issues["raw_source_missing_from_list"].append(s)
 
     # Version-chain / ingest-status checks (added 2026-09-23, user rule): status
@@ -238,7 +247,7 @@ def main():
     print(f"=== LINT REPORT - {pathlib.Path('.').resolve().name} ===")
     print()
     print(f"Files checked:    {stats['files_checked']}")
-    print(f"Wikilinks total:  {stats['wikilinks']}")
+    print(f"Links total:      {stats['links']}")
     print(f"Image refs total: {stats['images']}")
     if stats["images_skipped"]:
         print(f"Image refs skipped: {stats['images_skipped']} (raw/assets/ absent: git-ignored, local only)")
@@ -252,10 +261,10 @@ def main():
 
     print(f"ISSUES: {total}")
     for cat in [
-        "unresolved_wikilink", "missing_image", "missing_frontmatter", "malformed_frontmatter",
+        "wikilink_syntax", "unresolved_link", "missing_image", "missing_frontmatter", "malformed_frontmatter",
         "missing_type_field", "missing_source_type", "bad_source_type", "missing_captured_as",
         "note_missing_companion", "note_bad_companion",
-        "note_companion_not_wikilinked",
+        "note_companion_not_linked",
         "full_without_note", "note_without_full", "raw_source_missing_from_list",
         "missing_vision_model", "version_metadata_in_full_source", "stale_ingest_status",
         "suspicious_tail",

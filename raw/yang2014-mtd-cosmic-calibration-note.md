@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Yang 2014 — MTD cosmic-ray calibration — curated notes
 
-> **Full source:** [[yang2014-mtd-cosmic-calibration]] · Companion notes to [[yang2014-mtd-cosmic-calibration]] (full source; a full-content paraphrase).
+> **Full source:** [yang2014-mtd-cosmic-calibration](yang2014-mtd-cosmic-calibration.md) · Companion notes to [yang2014-mtd-cosmic-calibration](yang2014-mtd-cosmic-calibration.md) (full source; a full-content paraphrase).
 
 Links: DOI <https://doi.org/10.1016/j.nima.2014.05.075> · arXiv <https://arxiv.org/abs/1402.1078>
 
@@ -112,5 +112,5 @@ Primary measured MTD resolution numbers (≈90–108 ps, 1–2.6 cm) and the fin
 
 ## Related
 
-- Synthesis: [[star-mtd]] · [[mrpc-technology]] · [[star-magnet-absorber]] · [[star-barrel-tof]] · [[star-daq-trigger]] · [[open-questions]]
-- Other notes: [[ruan2009-mtd-concept-note]] (design and 2007–08 prototype) · [[huang2016-mtd-muon-id-note]] (cites this paper for ~100 ps, 1–2 cm) · [[llope2012-star-mrpc-systems-note]] (TOF/MTD electronics) · [[wu2007-star-barrel-tof-note]]
+- Synthesis: [star-mtd](../wiki/synthesis/star-mtd.md) · [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [star-magnet-absorber](../wiki/synthesis/star-magnet-absorber.md) · [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Other notes: [ruan2009-mtd-concept-note](ruan2009-mtd-concept-note.md) (design and 2007–08 prototype) · [huang2016-mtd-muon-id-note](huang2016-mtd-muon-id-note.md) (cites this paper for ~100 ps, 1–2 cm) · [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (TOF/MTD electronics) · [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md)

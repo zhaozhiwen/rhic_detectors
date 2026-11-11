@@ -470,7 +470,7 @@ PDG constants used: Pb X0 = 0.56 cm and λ_I = 17.6 cm; W X0 = 0.35 cm and λ_I 
 - **EM uniformity:** the position dependence of the EM response is large. The fitted profiles fall by ≈12% (X) and 17% (Y) at 10 mm from the tower centre (my inference from the fit parameters). A 1.4 cm central circle was therefore used.
 - **EIC barrel prototype (Fig. 12):** stochastic term ≈9.6–12.1%/√E and constant term ≈0.3–1.3% at η = 0–0.9, reading the fit parameters with the swap noted above.
 
-### (d) 2014 prototype vs as-built FCS (from [[ruan2026-fcs-specs-email-note]])
+### (d) 2014 prototype vs as-built FCS (from [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md))
 
 | Item | 2014 prototype / proposal (this paper) | As-built STAR FCS (ruan2026-fcs-specs-email) |
 |---|---|---|

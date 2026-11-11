@@ -66,12 +66,12 @@ Same discrimination in reverse (reject muons, keep pions).
 - Preliminary (J. Kim, η = 1.74, PYTHIA): π:μ flux at 1 GeV/c ≈ 368k : 736 ≈ 500:1; per-pion misID of a few × 10⁻³ still leaves a mostly-pion muon-tagged sample after cross-section weighting. MIP selection used HCAL hit count (14–21 hits at 5 GeV) and localized hit positions.
 
 ### 4.5 STAR MTD — absorber + timing detector, no HCAL [note]
-Cross-check against the STAR sources in this wiki; agrees with §§1–3. Details on [[star-mtd]] and [[star-magnet-absorber]].
-- **Setup**: ≈ 61 cm of backleg steel (≈ 3.6 λ_I alone) + BEMC (≈ 0.7 λ_I, [[beddo2003-bemc-note]]); the papers say "about 5" lengths. Then one MRPC layer at r ≈ 400 cm; no longitudinal segmentation. Muon ID uses track matching, TPC dE/dx and timing [[ruan2009-mtd-concept-note]], [[huang2016-mtd-muon-id-note]].
-- **Decay in flight dominates**, as §3 says: in 2008 d+Au prototype data prompt muons are only 6–10% of MTD muon candidates; pion decays 30–40%; the rest mostly kaon decays within the first ~2 m. A tight dE/dx cut raises prompt/secondary only to 1/6–1/3, at 26% efficiency [[ruan2009-mtd-concept-note]].
-- **Per-track rejection**: simulation gives < 1% of hadrons accepted (rejection factor 50–100 with > 80% prompt-muon trigger efficiency); requiring an MTD muon candidate reduces BEMC hadronic showers by ≥ 10× [[ruan2009-mtd-concept-note]].
-- **Multiple scattering** of 2 GeV/c muons in the steel: ≈ 10 cm, 100 ps [[yang2014-mtd-cosmic-calibration-note]].
-- **Result**: dimuon trigger + likelihood-ratio muon ID gives a clean J/ψ (ε ≈ 0.81 per muon; S/√B ×2 with both muons) [[huang2016-mtd-muon-id-note]]. As in §4.4, a dimuon invariant-mass constraint, not single-track ID, makes it work.
+Cross-check against the STAR sources in this wiki; agrees with §§1–3. Details on [star-mtd](star-mtd.md) and [star-magnet-absorber](star-magnet-absorber.md).
+- **Setup**: ≈ 61 cm of backleg steel (≈ 3.6 λ_I alone) + BEMC (≈ 0.7 λ_I, [beddo2003-bemc-note](../../raw/beddo2003-bemc-note.md)); the papers say "about 5" lengths. Then one MRPC layer at r ≈ 400 cm; no longitudinal segmentation. Muon ID uses track matching, TPC dE/dx and timing [ruan2009-mtd-concept-note](../../raw/ruan2009-mtd-concept-note.md), [huang2016-mtd-muon-id-note](../../raw/huang2016-mtd-muon-id-note.md).
+- **Decay in flight dominates**, as §3 says: in 2008 d+Au prototype data prompt muons are only 6–10% of MTD muon candidates; pion decays 30–40%; the rest mostly kaon decays within the first ~2 m. A tight dE/dx cut raises prompt/secondary only to 1/6–1/3, at 26% efficiency [ruan2009-mtd-concept-note](../../raw/ruan2009-mtd-concept-note.md).
+- **Per-track rejection**: simulation gives < 1% of hadrons accepted (rejection factor 50–100 with > 80% prompt-muon trigger efficiency); requiring an MTD muon candidate reduces BEMC hadronic showers by ≥ 10× [ruan2009-mtd-concept-note](../../raw/ruan2009-mtd-concept-note.md).
+- **Multiple scattering** of 2 GeV/c muons in the steel: ≈ 10 cm, 100 ps [yang2014-mtd-cosmic-calibration-note](../../raw/yang2014-mtd-cosmic-calibration-note.md).
+- **Result**: dimuon trigger + likelihood-ratio muon ID gives a clean J/ψ (ε ≈ 0.81 per muon; S/√B ×2 with both muons) [huang2016-mtd-muon-id-note](../../raw/huang2016-mtd-muon-id-note.md). As in §4.4, a dimuon invariant-mass constraint, not single-track ID, makes it work.
 
 ## 5. Takeaway
 The per-track rejection numbers of §1 are achievable; whether they suffice depends on the π/μ flux ratio. In DIS-like environments with HCAL-only muon ID, expect to need (1) a dimuon invariant-mass constraint and/or (2) extra absorber + a tracking/veto plane behind it. NA62 reaches 10⁻⁵ only with ~8 λ, fine segmentation and ML shower-shape analysis.
@@ -92,4 +92,4 @@ The per-track rejection numbers of §1 are achievable; whether they suffice depe
 - J. Kim, 2nd EIC detector muon ID slides (2024-12-10): https://indico.bnl.gov/event/25846/contributions/100363/attachments/59053/101410/bnl-eic-2nd-det-JKIM-20241210.pdf
 
 ## Related
-[[star-mtd]] · [[star-magnet-absorber]] · [[star-fcs]]
+[star-mtd](star-mtd.md) · [star-magnet-absorber](star-magnet-absorber.md) · [star-fcs](star-fcs.md)

@@ -531,7 +531,7 @@ Support: US NSF (PHY-9602872, PHY-9977216, PHY-9971947 and others) and US DOE (W
   - TPC pile-up at ∼10³² cm⁻² s⁻¹: up to a few thousand pile-up segments per trigger, handled by Level 3 using EMC–track matching.
   - MAPMT information at L2 to control J/ψ and dilepton trigger rates.
 - **Radiation and ageing:** **nothing quantitative.** The only related statement is that gain stability of every channel must be monitored over the detector's lifetime, to catch sudden failures and slow deterioration, using the laser, LED and ⁶⁰Co systems.
-- **[note]** This is a pre-installation design paper (written 2001–2002). Its "2001 RHIC run" prototype and installation dates are plans. For context, the STAR detector status table (October 2026; see [[rhic-detector-status]]) lists the Endcap EMCal as "All", "In situ; no readout".
+- **[note]** This is a pre-installation design paper (written 2001–2002). Its "2001 RHIC run" prototype and installation dates are plans. For context, the STAR detector status table (October 2026; see [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md)) lists the Endcap EMCal as "All", "In situ; no readout".
 
 ---
 

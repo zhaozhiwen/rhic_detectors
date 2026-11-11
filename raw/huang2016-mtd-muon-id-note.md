@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Huang 2016 — MTD muon identification — curated notes
 
-> **Full source:** [[huang2016-mtd-muon-id]] · Companion notes to [[huang2016-mtd-muon-id]] (full source; a full-content paraphrase).
+> **Full source:** [huang2016-mtd-muon-id](huang2016-mtd-muon-id.md) · Companion notes to [huang2016-mtd-muon-id](huang2016-mtd-muon-id.md) (full source; a full-content paraphrase).
 
 Links: DOI <https://doi.org/10.1016/j.nima.2016.07.024> · arXiv <https://arxiv.org/abs/1601.02910>
 
@@ -42,7 +42,7 @@ The newly installed STAR MTD enables quarkonium measurements in the dimuon chann
 
 **Detector (Sec. 2)**
 - TPC |η|<1, 0.5 T. Backlegs: 30 bars, 61 cm thick at radius 363 cm, "about 5 absorption lengths".
-- MTD: radius about 403 cm, about 45% in azimuth within |η|<0.5; installed 10%, 63%, 100% for 2012, 2013, 2014 runs. Timing ~100 ps, spatial ~1–2 cm in rφ and z (from [[yang2014-mtd-cosmic-calibration-note]]).
+- MTD: radius about 403 cm, about 45% in azimuth within |η|<0.5; installed 10%, 63%, 100% for 2012, 2013, 2014 runs. Timing ~100 ps, spatial ~1–2 cm in rφ and z (from [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md)).
 - Triggers: single-muon and dimuon from hit counts in an online timing window; dimuon trigger = ≥2 MTD hits in coincidence with the bunch crossing.
 
 **Data / MC**
@@ -96,7 +96,7 @@ Signal PDFs = opposite-sign minus same-sign pairs in the J/ψ window (data) or e
 - [source issue] Garbled sentence "to record signals, also referred to as signals ('hits')".
 - [source issue] arXiv v3 duplicated word "particles particles" (fixed in the journal).
 - [source issue] Ref. [9] (LHCb) "J. of Instr. 10 (2013)" — volume/year mismatch.
-- [note] "about 5 absorption lengths" for 61 cm Fe (≈3.6 λ_I) is approximate. Compare 57 cm in [[yang2014-mtd-cosmic-calibration-note]] and 60 cm in [[ruan2009-mtd-concept-note]].
+- [note] "about 5 absorption lengths" for 61 cm Fe (≈3.6 λ_I) is approximate. Compare 57 cm in [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md) and 60 cm in [ruan2009-mtd-concept-note](ruan2009-mtd-concept-note.md).
 - [note] Abstract "factor of 2" is the both-muon result; probe-only gain is 1.38. Data efficiency plateaus for straight/N−1 (≈0.67, ≈0.72) are below the "about 80%" (which matches MC).
 - [note] Fig. 1 inset (1584, 15.36) differs from Table 1 basic (1656, 15.89): single fit vs average over fit models.
 - Route caveat: ScienceDirect served no HTML body; text from arXiv v3 HTML, rechecked against the publisher PDF ("±" rendered as "7" in its text layer). Publisher PDF saved by hand. The arXiv v3 PDF was not kept.
@@ -107,5 +107,5 @@ The working muon-ID recipe and its measured efficiency/rejection for the full MT
 
 ## Related
 
-- Synthesis: [[star-mtd]] · [[pi-mu-separation-calorimetry]] · [[star-magnet-absorber]] · [[star-daq-trigger]] · [[open-questions]]
-- Other notes: [[ruan2009-mtd-concept-note]] (MTD design, Ref. [5]) · [[yang2014-mtd-cosmic-calibration-note]] (resolution, Ref. [12])
+- Synthesis: [star-mtd](../wiki/synthesis/star-mtd.md) · [pi-mu-separation-calorimetry](../wiki/synthesis/pi-mu-separation-calorimetry.md) · [star-magnet-absorber](../wiki/synthesis/star-magnet-absorber.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Other notes: [ruan2009-mtd-concept-note](ruan2009-mtd-concept-note.md) (MTD design, Ref. [5]) · [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md) (resolution, Ref. [12])

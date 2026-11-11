@@ -258,14 +258,14 @@ Thanks to the STAR Collaboration, the RACF at BNL and National Cheng Kung Univer
 
 **(e) Fig. 3 caption vs text.** Yes: the caption reads "The PDF ratios of Δz, Δy × q, ΔToF, and nσπ variables", while the text says "only three variables, Δy × q, Δz and nσπ, are used to calculate the R value" with ΔToF cut fixed from N−1, and describes Fig. 3 as showing ratios for those three only. The figure has three panels. [source issue]
 
-**(f) MTD timing/position resolution.** Sec. 2: "As shown in cosmic ray data, the timing resolution of the MTD is ∼100 ps and the spatial resolutions are ∼1-2 cm in both rφ and z directions [12]" — Ref. [12] = C. Yang et al., NIM A 762 (2014) 1–6 (the MTD cosmic-ray calibration paper, see [[yang2014-mtd-cosmic-calibration-note]]). [note] The MTD timing is not simulated in MC (Sec. 4.1), so ΔToF is data-driven only.
+**(f) MTD timing/position resolution.** Sec. 2: "As shown in cosmic ray data, the timing resolution of the MTD is ∼100 ps and the spatial resolutions are ∼1-2 cm in both rφ and z directions [12]" — Ref. [12] = C. Yang et al., NIM A 762 (2014) 1–6 (the MTD cosmic-ray calibration paper, see [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md)). [note] The MTD timing is not simulated in MC (Sec. 4.1), so ΔToF is data-driven only.
 
 ---
 
 ## References (detector-relevant, as printed in the paper)
 
 - [1] K.H. Ackermann et al. (STAR), Nucl. Instr. and Meth. A 499 (2003) 624 — STAR detector overview.
-- [5] L. Ruan et al., J. Phys. G 36 (2009) 095001 — MTD proposal/design (see [[ruan2009-mtd-concept-note]]).
+- [5] L. Ruan et al., J. Phys. G 36 (2009) 095001 — MTD proposal/design (see [ruan2009-mtd-concept-note](ruan2009-mtd-concept-note.md)).
 - [6] Z. Xu, BNL LDRD project 07-007; Beam Test Experiment (T963) at Fermilab — MTD R&D.
 - [7] ATLAS Collaboration, Eur. Phys. J. C 74 (2014) 3130 — muon reconstruction/ID performance.
 - [8] CMS Collaboration, J. of Instr. 7 (2012), 10 — printed this way; [note] presumably JINST 7 (2012) P10002 (CMS muon reconstruction performance).

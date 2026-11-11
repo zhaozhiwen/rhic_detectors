@@ -7,7 +7,7 @@ updated: 2026-11-09
 
 # STAR Forward Calorimeter System (FCS)
 
-Forward ECal (re-used PHENIX Pb/scintillator shashlik) + HCal (Fe/scintillator) at ≈ 7 m from the IP, 2.5 < η < 4, SiPM readout; part of the STAR Forward Upgrade together with the Forward Tracking System (Si tracker + sTGC). Sources: QM2023 proceedings [[wang2024-star-forward-upgrade-note]], STAR Juniors talk Feb 2022 (not peer-reviewed) [[gagliardi2022-star-forward-upgrade-talk-note]], construction specs by email from L. Ruan [[ruan2026-fcs-specs-email-note]], and the 2014 prototype [[tsai2015-fcs-prototype-note]], which was a **different design**.
+Forward ECal (re-used PHENIX Pb/scintillator shashlik) + HCal (Fe/scintillator) at ≈ 7 m from the IP, 2.5 < η < 4, SiPM readout; part of the STAR Forward Upgrade together with the Forward Tracking System (Si tracker + sTGC). Sources: QM2023 proceedings [wang2024-star-forward-upgrade-note](../../raw/wang2024-star-forward-upgrade-note.md), STAR Juniors talk Feb 2022 (not peer-reviewed) [gagliardi2022-star-forward-upgrade-talk-note](../../raw/gagliardi2022-star-forward-upgrade-talk-note.md), construction specs by email from L. Ruan [ruan2026-fcs-specs-email-note](../../raw/ruan2026-fcs-specs-email-note.md), and the 2014 prototype [tsai2015-fcs-prototype-note](../../raw/tsai2015-fcs-prototype-note.md), which was a **different design**.
 
 ## As built (Wang 2024, Gagliardi 2022, email)
 
@@ -27,11 +27,11 @@ Forward ECal (re-used PHENIX Pb/scintillator shashlik) + HCal (Fe/scintillator) 
 
 ## Status and performance
 - Installed during 2020 (talk) / completed 2021 (Wang); commissioned in Run 21; in the trigger and data taking in Run 22 (p+p 510 GeV) and Run 23 (Au+Au 200 GeV).
-- ECal calibrated from the π⁰ mass, iterated per channel; within 10% of the π⁰ mass after two iterations [[wang2024-star-forward-upgrade-note]]. HCal MIP calibration still in progress at QM2023.
+- ECal calibrated from the π⁰ mass, iterated per channel; within 10% of the π⁰ mass after two iterations [wang2024-star-forward-upgrade-note](../../raw/wang2024-star-forward-upgrade-note.md). HCal MIP calibration still in progress at QM2023.
 - **No measured energy resolution** for either calorimeter in these sources; only design goals.
 - SiPM radiation damage tracked through leakage current in LED runs; gain loss compensated by regular bias and attenuator adjustments; worst near the beam pipe (Wang 2024 and its talk slides).
-- Run-22 FCS triggers: jet patches, di-jets, Drell–Yan (fcsDY ≈ 446 Hz recorded, ≈ 20% of the DAQ bandwidth) and J/ψ (fcsJPsi) [[gagliardi2022-star-forward-upgrade-talk-note]].
-- October 2026: Forward EMCal and Forward HCal "All", in situ; sTGC dismounted; FST one of two halves (3 layers) dismounted [[star2026-detector-status-note]] ([[rhic-detector-status]]).
+- Run-22 FCS triggers: jet patches, di-jets, Drell–Yan (fcsDY ≈ 446 Hz recorded, ≈ 20% of the DAQ bandwidth) and J/ψ (fcsJPsi) [gagliardi2022-star-forward-upgrade-talk-note](../../raw/gagliardi2022-star-forward-upgrade-talk-note.md).
+- October 2026: Forward EMCal and Forward HCal "All", in situ; sTGC dismounted; FST one of two halves (3 layers) dismounted [star2026-detector-status-note](../../raw/star2026-detector-status-note.md) ([rhic-detector-status](rhic-detector-status.md)).
 
 ## The 2014 prototype was a different design (Tsai 2015)
 
@@ -44,10 +44,10 @@ Forward ECal (re-used PHENIX Pb/scintillator shashlik) + HCal (Fe/scintillator) 
 
 The prototype's W/ScFi calorimetry went on to EIC R&D; the HCal's WLS-plate side readout and SiPM readout survived into the built FCS [note].
 
-## Open points ([[open-questions]] #15)
+## Open points ([open-questions](open-questions.md) #15)
 1. ECal tower length 33 cm (talk) vs 37.73 cm (email stack arithmetic: 66 × 4.24 + 65 × 1.50 mm); depth 0.85 vs 0.93 λ (≈ 0.90 recomputed). PHENIX PbSc documentation should settle it.
 2. Which end the SiPMs read: "front face" (Wang 2024) vs fibres read "at the back" (email).
 3. No HCal or combined resolution measured in STAR in any of these sources.
 
 ## Related
-[[star-eemc]] · [[pi-mu-separation-calorimetry]] · [[rhic-detector-status]] · [[open-questions]]
+[star-eemc](star-eemc.md) · [pi-mu-separation-calorimetry](pi-mu-separation-calorimetry.md) · [rhic-detector-status](rhic-detector-status.md) · [open-questions](open-questions.md)

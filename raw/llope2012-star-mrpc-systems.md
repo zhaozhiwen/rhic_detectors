@@ -237,7 +237,7 @@ STAR has adopted MRPC technology twice over: for charged-hadron identification b
 
 - **Trays:** 120, in two adjoining rings of 60 just outside the TPC (Section 3).
 - **MRPCs per tray:** 32. **Pads per MRPC:** 6 (one row). **Totals:** 3840 MRPCs and 23 040 channels ✓ (recomputed: 120 × 32 = 3840; × 6 = 23 040). The active area is about 50 m² (49.2 m² recomputed from pad area ✓).
-- **Radius:** **not given** in this paper (only "immediately outside of the STAR TPC"). The companion note [[wu2007-star-barrel-tof-note]] records R = 210 cm for the TOFr prototype tray, but that is from a different paper.
+- **Radius:** **not given** in this paper (only "immediately outside of the STAR TPC"). The companion note [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md) records R = 210 cm for the TOFr prototype tray, but that is from a different paper.
 - **η coverage:** about 0.9 units per tray, two rings, so roughly $|\eta|\lesssim0.9$ (my inference; no total range is printed).
 - **φ coverage:** 1/60 of $2\pi$ per tray = 6°, full $2\pi$ for each ring.
 - **Orientation:** the 32 MRPCs per tray are arranged "**nearly projectively** for collisions occurring at the center of STAR", i.e. tilted toward the nominal vertex at $z = 0$. Tilt angles are not given.

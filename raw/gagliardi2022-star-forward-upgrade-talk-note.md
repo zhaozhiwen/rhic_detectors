@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Gagliardi 2022 — Curated Notes
 
-> **Full source:** [[gagliardi2022-star-forward-upgrade-talk]] · Companion notes to [[gagliardi2022-star-forward-upgrade-talk]] (full source).
+> **Full source:** [gagliardi2022-star-forward-upgrade-talk](gagliardi2022-star-forward-upgrade-talk.md) · Companion notes to [gagliardi2022-star-forward-upgrade-talk](gagliardi2022-star-forward-upgrade-talk.md) (full source).
 > **Links:** no DOI (talk slides) · **PDF:** `assets/gagliardi2022-star-forward-upgrade-talk/source.pdf`
 
 ## Bibliographic / source
@@ -75,20 +75,20 @@ The forward upgrade adds tracking (Si FST + sTGC) and calorimetry (ECal + HCal w
 - [s25] projection assumes P = 60%; Run 22 achieved upper 40s %.
 - Not peer-reviewed; internal/collaboration material published with Zhiwen's agreement. Many plot values eyeballed.
 
-## FCS cross-checks (vs [[ruan2026-fcs-specs-email-note]])
+## FCS cross-checks (vs [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md))
 
 - Agree: 7 m vs ECal front z = 710.16 cm / HCal front z = 782.63 cm; 1496 and 520 channels; 66-cell 1.5 mm Pb / 4 mm Sc ECal; HCal 20 mm / 3 mm, 10 × 10 × 84 cm³ vs 9.99 × 9.99 cm, 84.24 cm; HCal ≈ 4.5 λ_I vs 4.45 λ; 18 X₀ vs 18.1 X₀; two halves.
 - ECal face 5.52 cm vs 5.542 cm (rounding).
 - **ECal tower length 33 cm vs 37.73 cm** — unexplained.
 - **ECal depth 0.85 λ_I vs 0.93 λ** (recomputed from layers ≈ 0.90 λ_I).
 - DEP boards (24 per half ECal, 9 per half HCal) appear only in the email.
-- Readout end not addressed in the talk; Wang 2024 says SiPM electronics "on the front face", the email says ECal fibres "read out at the back". See [[open-questions]].
+- Readout end not addressed in the talk; Wang 2024 says SiPM electronics "on the front face", the email says ECal fibres "read out at the back". See [open-questions](../wiki/synthesis/open-questions.md).
 
 ## Relevance
 
-Fullest single description of the as-built [[star-fcs]] and its role in the forward physics programme, plus a snapshot of Run 22 operations: FCS trigger menu and rates ([[star-daq-trigger]]), first offline π⁰ and MIP signals, and run-plan context (Run 22 pp 500 GeV, 2023/2025 Au+Au 200 GeV, 2024 pp and p+Au 200 GeV). Mid-rapidity triggers in the same DAQ table (BHT3, JP2, EHT1, dimuon) and TOF/BTOW/ETOW rates connect to [[star-bemc]], [[star-eemc]], [[star-barrel-tof]] and [[star-mtd]].
+Fullest single description of the as-built [star-fcs](../wiki/synthesis/star-fcs.md) and its role in the forward physics programme, plus a snapshot of Run 22 operations: FCS trigger menu and rates ([star-daq-trigger](../wiki/synthesis/star-daq-trigger.md)), first offline π⁰ and MIP signals, and run-plan context (Run 22 pp 500 GeV, 2023/2025 Au+Au 200 GeV, 2024 pp and p+Au 200 GeV). Mid-rapidity triggers in the same DAQ table (BHT3, JP2, EHT1, dimuon) and TOF/BTOW/ETOW rates connect to [star-bemc](../wiki/synthesis/star-bemc.md), [star-eemc](../wiki/synthesis/star-eemc.md), [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) and [star-mtd](../wiki/synthesis/star-mtd.md).
 
 ## Related
 
-- Synthesis: [[star-fcs]] · [[star-daq-trigger]] · [[star-bemc]] · [[star-eemc]] · [[star-barrel-tof]] · [[star-mtd]] · [[rhic-detector-status]] · [[open-questions]]
-- Notes: [[tsai2015-fcs-prototype-note]] (2014 prototype) · [[wang2024-star-forward-upgrade-note]] (QM2023 proceedings) · [[ruan2026-fcs-specs-email-note]] (construction specs) · [[star2026-detector-status-note]]
+- Synthesis: [star-fcs](../wiki/synthesis/star-fcs.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [star-bemc](../wiki/synthesis/star-bemc.md) · [star-eemc](../wiki/synthesis/star-eemc.md) · [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-mtd](../wiki/synthesis/star-mtd.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md) (2014 prototype) · [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) (QM2023 proceedings) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (construction specs) · [star2026-detector-status-note](star2026-detector-status-note.md)

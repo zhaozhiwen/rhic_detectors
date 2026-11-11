@@ -19,7 +19,7 @@ versions_checked: 2026-11-10
 
 # Schambach 2006 — Curated Notes
 
-> **Full source:** [[schambach2006-star-tof-electronics]] · Companion notes to [[schambach2006-star-tof-electronics]] (full source; a full-content paraphrase).
+> **Full source:** [schambach2006-star-tof-electronics](schambach2006-star-tof-electronics.md) · Companion notes to [schambach2006-star-tof-electronics](schambach2006-star-tof-electronics.md) (full source; a full-content paraphrase).
 > **DOI:** https://doi.org/10.1109/NSSMIC.2006.356203 · IEEE Xplore: https://ieeexplore.ieee.org/document/4179042 · arXiv: none
 
 ## Bibliographic
@@ -125,9 +125,9 @@ The planned STAR TOF has 3840 six-pad MRPCs on 120 trays, 23040 channels. Each t
 ## Source issues and caveats
 
 - **[source issue]** "more that 95%" printed; "more than" meant (Sec. I).
-- **Pad size contradiction:** 3.3 cm × 6.1 cm here vs 3.5 × 6.1 cm² in [[llope2012-star-mrpc-systems-note]] (also co-authored by W. J. Llope). **[note]** Six 3.3 cm pads = 19.8 cm, six 3.5 cm pads = 21 cm; either fits across the tray only with the short side along φ, so the pad-orientation inference on [[star-barrel-tof]] stands. Unresolved; see [[open-questions]].
-- **Glass contradiction:** outer 0.7 mm / inner 0.55 mm here vs outer 1.1 mm / inner 0.54 mm in [[llope2012-star-mrpc-systems-note]]. This paper is a 2006 design; Llope 2012 describes the as-built system, but neither says the glass changed. Unresolved.
-- **η per shell:** "about 1 unit" here vs ≈ 0.9 per tray in Llope 2012 and \|η\| < 0.9 as built in [[yang2014-mtd-cosmic-calibration-note]]; consistent with "about".
+- **Pad size contradiction:** 3.3 cm × 6.1 cm here vs 3.5 × 6.1 cm² in [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (also co-authored by W. J. Llope). **[note]** Six 3.3 cm pads = 19.8 cm, six 3.5 cm pads = 21 cm; either fits across the tray only with the short side along φ, so the pad-orientation inference on [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) stands. Unresolved; see [open-questions](../wiki/synthesis/open-questions.md).
+- **Glass contradiction:** outer 0.7 mm / inner 0.55 mm here vs outer 1.1 mm / inner 0.54 mm in [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md). This paper is a 2006 design; Llope 2012 describes the as-built system, but neither says the glass changed. Unresolved.
+- **η per shell:** "about 1 unit" here vs ≈ 0.9 per tray in Llope 2012 and \|η\| < 0.9 as built in [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md); consistent with "about".
 - Fig. 1 draws half a tray (4 MRPC → 4 TINO → 4 TDIG, "96 CHAN"), matching the two data cables of 96 pads each; the text gives 8 TINO + 8 TDIG per tray. The TCPU–THUB label lists "DATA" twice (as printed).
 - Fig. 3 peak at −309.8 ps (constant offset, not discussed); RMS 99.5 > σ shows non-Gaussian tails.
 - Design-era paper: counts and construction numbers are plans as of 2006; Llope 2012 supersedes them where it gives a value, except where the two simply disagree (pad, glass) without explanation.
@@ -139,5 +139,5 @@ The only ingested source that describes the BTOF readout boards in detail: NINO 
 
 ## Related
 
-- Synthesis: [[star-barrel-tof]] · [[star-daq-trigger]] · [[mrpc-technology]] · [[rhic-detector-status]] · [[open-questions]]
-- Notes: [[llope2012-star-mrpc-systems-note]] (as-built system; pad 3.5 vs 3.3 cm, glass 1.1/0.54 vs 0.7/0.55 mm) · [[wu2007-star-barrel-tof-note]] (contemporary QM2006 overview, no construction details) · [[shao2002-mrpc-beam-test-note]] (USTC prototype; same 0.22 mm fibre spacers) · [[yang2014-mtd-cosmic-calibration-note]] (MTD read out with "STAR TOF" electronics)
+- Synthesis: [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (as-built system; pad 3.5 vs 3.3 cm, glass 1.1/0.54 vs 0.7/0.55 mm) · [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md) (contemporary QM2006 overview, no construction details) · [shao2002-mrpc-beam-test-note](shao2002-mrpc-beam-test-note.md) (USTC prototype; same 0.22 mm fibre spacers) · [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md) (MTD read out with "STAR TOF" electronics)

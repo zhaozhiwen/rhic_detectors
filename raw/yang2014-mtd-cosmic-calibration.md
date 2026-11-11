@@ -175,7 +175,7 @@ $$
 
 **[note]** $2.2\times10^{-3}\times400$ cm = 0.88 cm ✓. The $1/x^2$ term in $y^2$ is the expected $\sigma_{\rm MS}\propto1/p$ ✓.
 
-**[note]** Strip-pitch check (an item in [[open-questions]]): a digital "centre of the strip" position gives σ ≈ pitch/√12: type A (2.5 + 0.4 = 2.9 cm) → 0.84 cm, close to the measured 0.9 cm ✓; type B (3.8 + 0.6 = 4.4 cm) → 1.27 cm, against 1.6–1.9 cm measured for type B in Table 2. Worked out in [[mrpc-technology]].
+**[note]** Strip-pitch check (an item in [open-questions](../wiki/synthesis/open-questions.md)): a digital "centre of the strip" position gives σ ≈ pitch/√12: type A (2.5 + 0.4 = 2.9 cm) → 0.84 cm, close to the measured 0.9 cm ✓; type B (3.8 + 0.6 = 4.4 cm) → 1.27 cm, against 1.6–1.9 cm measured for type B in Table 2. Worked out in [mrpc-technology](../wiki/synthesis/mrpc-technology.md).
 
 ![Fig. 6](assets/yang2014-mtd-cosmic-calibration/fig6.jpg)
 
@@ -306,7 +306,7 @@ The authors thank the STAR Collaboration and the RACF at BNL.
 
 **(b) Field used for t_Steel.** Sec. 3.2 (PDF and arXiv): t_Steel "can be derived from the track's helix parameters, momentum p, and the 0.5 T magnetic field". Sec. 4.2 uses 0.5 T inside, **−1.26 T** in the backleg steel (arXiv prints "-1.26 T"; in the publisher PDF the minus is a font glyph that pdftotext turns into a control character; the HTML has −1.26 T) and zero field at the MTD for the position extrapolation. **[source issue]** (minor): the stated 0.5 T for t_Steel does not match the Sec. 4.2 field map. **[note]** For timing this hardly matters: for a 6 GeV/c track over ~1.8 m (220 → 400 cm), the path-length excess over a chord is L³/(24R²) ≈ 0.15 mm (R = 40 m at 0.5 T) → 0.5 ps, and through 57 cm of steel at 1.26 T (R = 15.9 m) ≈ 0.03 mm → 0.1 ps. The difference between field models is therefore ≪ 1 ps, far below the 25 ps multiple-scattering term. The field model matters for the ΔZ/Δφ position matching, not for t_Steel. (Rough estimate: a radial straight path is assumed; cosmic tracks are not radial.)
 
-**(c) Signal propagation speed along the strips.** **Not stated.** The paper only says that Z is derived from the leading-edge time difference between the two strip ends (Sec. 4.2). No cm/ns value, effective speed, or strip length conversion appears in the HTML, the publisher PDF or the arXiv text (searched for speed/velocity/propagat/cm/ns). The 15–18 cm/ns value listed in [[open-questions]] cannot be confirmed from this paper.
+**(c) Signal propagation speed along the strips.** **Not stated.** The paper only says that Z is derived from the leading-edge time difference between the two strip ends (Sec. 4.2). No cm/ns value, effective speed, or strip length conversion appears in the HTML, the publisher PDF or the arXiv text (searched for speed/velocity/propagat/cm/ns). The 15–18 cm/ns value listed in [open-questions](../wiki/synthesis/open-questions.md) cannot be confirmed from this paper.
 
 **(d) Backleg thickness.** "57 cm thick at a radius of 363 cm", trapezoidal cross-section, 6.85 m long, 30 flux-return bars (Sec. 3.1; HTML = PDF = arXiv). **[note]** 57 cm Fe ≈ 3.4 λ_I (λ_I = 16.8 cm); the BEMC adds to the absorber, as the paper says ("return bars and the BEMC serve as a hadron absorber").
 

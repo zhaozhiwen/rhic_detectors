@@ -13,27 +13,27 @@ The repo is **public** on GitHub as `zhaozhiwen/rhic_detectors`, pushed by the u
 ```
 wiki/                         ← navigation only: index.md, list.md, log.md
   └─ synthesis/<topic>.md     ← Layer 1: thematic pages (detectors, systems, technologies, status)
-                │  links down via [[<slug>-note]]
+                │  links down to raw/<slug>-note.md
                 ▼
 raw/<slug>-note.md            ← Layer 2: per-source curated note (bridge)
-                │  companion: <slug>.md + a [[<slug>]] wikilink in the body
+                │  companion: <slug>.md + a link to it in the body
                 ▼
 raw/<slug>.md                 ← Layer 3: full-content paraphrase of the source
 ```
 
 **Layer 1 — `wiki/synthesis/`.** Cross-cutting pages, each drawing on several sources. No per-source pages (a source's own write-up is its note). The `wiki/` root holds only `index.md`, `list.md`, `log.md`. Multi-source composites with no single companion may be named `<topic>-synthesis.md` with frontmatter `type: synthesis` and `compiled_from:`.
 
-**Layer 2 — `raw/<slug>-note.md`.** Frontmatter `type: raw-note`, `companion: <slug>.md` (or `companion: none` for note-only sources), `source_type:` (same value as the companion), and **links for readers**: `doi:` and/or `arxiv:` and `journal:` (venue, volume, pages, year) for papers, `url:` for anything else with a public address. PDFs and figures are not in the repo, so these links are how a GitHub reader reaches the original. Body: "Companion notes to [[<slug>]] (full source).", bibliography, the abstract **paraphrased** (never verbatim — public repo), key numbers, motivations, method, caveats, the SoLID angle, and a "Related" block at the bottom (`[[<topic>]]` up, `[[<other-slug>-note]]` across). The note **holds all metadata that can go stale**: `earlier_version:` / `later_version:` (each `<slug> (<what/when>) -- ingested` or `-- not ingested`), `version_facts:`, `versions_checked: <date>`. Update these in every note that names a newly ingested source.
+**Layer 2 — `raw/<slug>-note.md`.** Frontmatter `type: raw-note`, `companion: <slug>.md` (or `companion: none` for note-only sources), `source_type:` (same value as the companion), and **links for readers**: `doi:` and/or `arxiv:` and `journal:` (venue, volume, pages, year) for papers, `url:` for anything else with a public address. PDFs and figures are not in the repo, so these links are how a GitHub reader reaches the original. Body: "Companion notes to [<slug>](<slug>.md) (full source).", bibliography, the abstract **paraphrased** (never verbatim — public repo), key numbers, motivations, method, caveats, the SoLID angle, and a "Related" block at the bottom (`[<topic>](../wiki/synthesis/<topic>.md)` up, `[<other-slug>-note](<other-slug>-note.md)` across). The note **holds all metadata that can go stale**: `earlier_version:` / `later_version:` (each `<slug> (<what/when>) -- ingested` or `-- not ingested`), `version_facts:`, `versions_checked: <date>`. Update these in every note that names a newly ingested source.
 
 **Layer 3 — `raw/<slug>.md`: full-content paraphrase** (user decision, 2026-11-09; applies to every source and every new ingest). Every section of the source, in order; **every number, unit, equation, table cell and reference reproduced exactly**; prose and figure captions paraphrased in our own words. It is NOT a verbatim transcription. Frontmatter `type: raw-source`, `captured_as: full-content paraphrase`, `source_type: paper | email | status-sheet | talk-slides`, `captured_via:` (route + evidence), `captured_date:`, `figures:`, `vision_model:`, plus `doi:`/`arxiv:`/`url:`. Equations keep the source's own numbers as `\tag{N}`. Our additions are tagged **[note]**, suspected errors in the source **[source issue]** (state what is printed and what is meant; never silently correct). Short quotations only where the exact wording matters (e.g. a "first" claim), in quote marks. Immutable once written: it carries only capture-time facts — never `earlier_version`/`later_version` or "not ingested"/"later version exists" status (lint `version_metadata_in_full_source`).
 
-**Linking rules.** Thematic pages link down via `[[<slug>-note]]`. Notes link up to thematic pages and down to the companion with a real `[[<slug>]]` wikilink (lint `note_companion_not_wikilinked`). Notes cite other sources as `[[<other-slug>-note]]`, never `[[<other-slug>]]`. Full sources are leaves.
+**Linking rules.** All cross-references are **relative Markdown links** with the slug as link text, e.g. `[star-mtd](../wiki/synthesis/star-mtd.md)` from a file in `raw/` — never Obsidian `[[wikilinks]]`, which GitHub shows as plain text (user decision, 2026-11-11; lint `wikilink_syntax`, `unresolved_link`). Paths are relative to the linking file: from `raw/` → `../wiki/synthesis/<page>.md`, `<slug>-note.md`; from `wiki/synthesis/` → `../../raw/<slug>-note.md`, `<page>.md`; from `wiki/` → `synthesis/<page>.md`, `../raw/<slug>.md`. Never put links in YAML frontmatter. Thematic pages link down to `<slug>-note.md`. Notes link up to thematic pages and down to the companion `<slug>.md` (lint `note_companion_not_linked`). Notes cite other sources via `<other-slug>-note.md`, never `<other-slug>.md`. Full sources are leaves (no links to other wiki pages). In Obsidian set Settings → Files & Links: "Use [[Wikilinks]]" off, "New link format" = relative path.
 
 **Citing the user.** Facts the user states in chat (e.g. tray dimensions he knows from the hardware) are cited as "Zhiwen, personal communication, <YYYY-MM-DD>" — on the synthesis page where used, and in the log entry. They are never presented as coming from a paper.
 
 ## Directory layout
 
-Repo root = wiki root = Obsidian vault.
+Repo root = wiki root = Obsidian vault (also browsable on GitHub: all links are relative Markdown links).
 
 ```
 rhic_detectors/
@@ -54,7 +54,7 @@ rhic_detectors/
 ```
 
 - `wiki/index.md` — thematic reading path: `wiki/synthesis/` pages grouped by page type. Does not list raw sources.
-- `wiki/list.md` — flat inventory of every raw source (format below); lint requires every `raw/<slug>.md` to appear there as `[[<slug>]]` (`raw_source_missing_from_list`).
+- `wiki/list.md` — flat inventory of every raw source (format below); lint requires every `raw/<slug>.md` to be linked there (`raw_source_missing_from_list`).
 - `wiki/log.md` — append-only session log.
 - Nothing else at the root without asking the user. Scratch files (page renders, contact sheets, OCR output, HTML dumps, converted drafts) live **outside the repo** (cloud container scratch / `/tmp`, or device `$HOME` outside `mnt/`), never in `raw/` or `raw/assets/`.
 
@@ -133,7 +133,7 @@ updated: YYYY-MM-DD
 
 **Tag vocabulary:** shared `experiment`, `theory`, `measurement`, `overview`; domain tags `detector`, `status`, `technology`. Add a new tag only with the user's OK and list it here.
 
-Pages are dense and LLM-readable — no filler. Every number carries its source (`[[<slug>-note]]`, section or page); where sources disagree, give both values with sources and say which supersedes which (or that it is unresolved). Obsidian wikilinks `[[page]]` for cross-references; an entity or concept mentioned on several pages gets its own page.
+Pages are dense and LLM-readable — no filler. Every number carries its source (a link to `<slug>-note.md`, section or page); where sources disagree, give both values with sources and say which supersedes which (or that it is unresolved). Relative Markdown links for cross-references (see Linking rules); an entity or concept mentioned on several pages gets its own page.
 
 ## Page types
 
@@ -148,7 +148,7 @@ Pages are dense and LLM-readable — no filler. Every number carries its source 
 
 ## index.md format
 
-Grouped by page type. Each entry: `- [[page]] — one-line summary (N sources)`. Read `index.md` first on every query.
+Grouped by page type. Each entry: `- [page](synthesis/page.md) — one-line summary (N sources)`. Read `index.md` first on every query.
 
 ## list.md format
 
@@ -157,7 +157,7 @@ One `## Raw sources` table, one row per `raw/<slug>.md`, added on every ingest:
 ```
 | Slug | Full source | Note | Route | Ingested |
 |---|---|---|---|---|
-| <slug> | [[<slug>]] — Authors, *Title*, venue (or: email / talk slides / status sheet) | [[<slug>-note]] | Route N (short reason) | YYYY-MM-DD |
+| <slug> | [<slug>](../raw/<slug>.md) — Authors, *Title*, venue (or: email / talk slides / status sheet) | [<slug>-note](../raw/<slug>-note.md) | Route N (short reason) | YYYY-MM-DD |
 ```
 
 Keep the Route cell short; the forensic detail belongs in `captured_via` and the log.
@@ -243,7 +243,7 @@ A source may touch 5–15 pages. Prefer updating pages over creating new ones. W
 
 ## Lint workflow
 
-**Structural lint** (run first, must pass): `python3 scripts/lint.py` from the repo root. Scans `raw/*.md`, `wiki/synthesis/*.md`, `wiki/index.md`, `wiki/list.md`, `wiki/log.md` only (not the root files, `agents/`, `scripts/` or `_to_delete/`). Checks: wikilink resolution, image existence (skipped for `assets/` paths when `raw/assets/` is absent, e.g. a fresh GitHub clone), raw frontmatter presence and `type:`, `source_type:` and `captured_as:` on Layer 3, `vision_model`, note companion fields and companion wikilink, full↔note pairing, `list.md` coverage, version metadata out of Layer 3, stale "not ingested" status, tail truncation. Exit 0 = clean.
+**Structural lint** (run first, must pass): `python3 scripts/lint.py` from the repo root. Scans `raw/*.md`, `wiki/synthesis/*.md`, `wiki/index.md`, `wiki/list.md`, `wiki/log.md` only (not the root files, `agents/`, `scripts/` or `_to_delete/`). Checks: no `[[wikilinks]]`, relative Markdown link resolution, image existence (skipped for `assets/` paths when `raw/assets/` is absent, e.g. a fresh GitHub clone), raw frontmatter presence and `type:`, `source_type:` and `captured_as:` on Layer 3, `vision_model`, note companion fields and companion link, full↔note pairing, `list.md` coverage, version metadata out of Layer 3, stale "not ingested" status, tail truncation. Exit 0 = clean.
 
 **Full review** (user preference): ask first; then two independent subagents, told that whoever finds the most serious issues wins; merge their findings, deduplicated and verified, into one report.
 

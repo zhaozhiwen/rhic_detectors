@@ -7,7 +7,7 @@ updated: 2026-11-09
 
 # STAR Endcap Electromagnetic Calorimeter (EEMC)
 
-Pb/scintillator sampling calorimeter on the west poletip, 1.086 ≤ η ≤ 2.00, with a scintillator-strip shower-maximum detector (SMD), preshower and postshower layers. Source: design paper by Allgower et al. [[star2003-eemc-note]] (NIM A 499 (2003) 740, RHIC special issue, the article after the BEMC paper). Design numbers only; **no measured in-situ resolution**. Barrel counterpart: [[star-bemc]].
+Pb/scintillator sampling calorimeter on the west poletip, 1.086 ≤ η ≤ 2.00, with a scintillator-strip shower-maximum detector (SMD), preshower and postshower layers. Source: design paper by Allgower et al. [star2003-eemc-note](../../raw/star2003-eemc-note.md) (NIM A 499 (2003) 740, RHIC special issue, the article after the BEMC paper). Design numbers only; **no measured in-situ resolution**. Barrel counterpart: [star-bemc](star-bemc.md).
 
 | Item | Value |
 |---|---|
@@ -22,12 +22,12 @@ Pb/scintillator sampling calorimeter on the west poletip, 1.086 ≤ η ≤ 2.00,
 | Electronics | reuses the BEMC tower electronics; SMD/pre/post via gated integrators; MAPMT data available at Level 2, not Level 0 |
 | Resolution | requirement σ_E/E ≤ 16%/√E + 2% |
 | Calibration | final ±2% absolute scale in situ (π⁰, Z⁰ peaks) |
-| Status (Oct 2026) | "All", in situ, no readout [[star2026-detector-status-note]] |
+| Status (Oct 2026) | "All", in situ, no readout [star2026-detector-status-note](../../raw/star2026-detector-status-note.md) |
 
 Notes:
-- Table 1 of the paper lost its cell structure in the HTML; the note rebuilt it from the PDF [[star2003-eemc-note]].
+- Table 1 of the paper lost its cell structure in the HTML; the note rebuilt it from the PDF [star2003-eemc-note](../../raw/star2003-eemc-note.md).
 - Same 6° φ segmentation (60 sectors) as BEMC and barrel TOF [note].
-- The Endcap TOF (a separate, later detector, not covered by any source here) is listed as dismounted and packed for return to Germany ([[rhic-detector-status]]).
+- The Endcap TOF (a separate, later detector, not covered by any source here) is listed as dismounted and packed for return to Germany ([rhic-detector-status](rhic-detector-status.md)).
 
 ## Related
-[[star-bemc]] · [[star-fcs]] · [[rhic-detector-status]]
+[star-bemc](star-bemc.md) · [star-fcs](star-fcs.md) · [rhic-detector-status](rhic-detector-status.md)

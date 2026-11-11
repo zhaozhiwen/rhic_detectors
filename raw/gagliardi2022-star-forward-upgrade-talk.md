@@ -22,7 +22,7 @@ vision_model: "general-purpose subagent (session model, not recorded), 2026-11-0
 - **Route used:** route 3 (PDF only; slides supplied by the repo author).
 - **PDF backup:** `assets/gagliardi2022-star-forward-upgrade-talk/source.pdf` (8 187 849 bytes, 52 pages, 960 × 540 pt).
 - **Verification:** slide text was checked against `pdftotext -layout`. Content that exists only in images (plot labels, fit boxes, statistics boxes, trigger-rate tables, screenshots) was read from rendered slides (80 dpi for all slides, 220 dpi crops for slides 8, 11, 15, 28, 42, 49 and 51). Values I read off plot axes are marked ≈. Numbers printed in plots are transcribed exactly.
-- **Comparison file:** [[ruan2026-fcs-specs-email-note]] (FCS ECal/HCal construction specs from Lijuan Ruan), used only for the [note] comparison table under slides 12–13.
+- **Comparison file:** [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (FCS ECal/HCal construction specs from Lijuan Ruan), used only for the [note] comparison table under slides 12–13.
 - Figure descriptions were added by a separate figure pass that looked at the images.
 
 ---
@@ -142,7 +142,7 @@ Outline: (1) What is the Forward Upgrade? (2) What science will it do? (3) How a
 
 *Figure description (from the image):* Left: crop of the same 3D rendering as slides 4–5, with a large red ellipse around the two box-shaped calorimeter halves downstream of the light-blue tracker disks (each half drawn as a purple front block with a blue-violet rear block; the drawing does not label which is ECal or HCal). NSF logo top right. Red and black text bottom left and green/blue specification bullets on the right as transcribed. No numbers or labels inside the drawing.
 
-**[note] FCS numbers: this talk vs [[ruan2026-fcs-specs-email-note]].**
+**[note] FCS numbers: this talk vs [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md).**
 
 | Quantity | Gagliardi talk [s12–s13] | ruan2026-fcs-specs-email | Comment |
 |---|---|---|---|
@@ -506,7 +506,7 @@ The physics-program graphic from [s17] is repeated. Conclusions:
 **(b) FCS HCal and ECal design.**
 - ECal: Pb/Sc sampling with 66 cells of 1.5 mm Pb / 4 mm Sc, 36 WLS fibers per tower, 5.52 × 5.52 cm towers (33 cm length on the slide — see [source issue]), 18 X₀, 0.85 λ_I, PMTs replaced by SiPMs.
 - HCal: Fe/Sc 20 mm / 3 mm, 10 × 10 × 84 cm towers, ≈ 4.5 λ_I, same SiPM readout as the ECal, developed with EIC R&D [s12].
-- Electronics: "new ADC + trigger electronics" [s4]. The talk does **not** mention DEP boards, SiPM type or bias. The DEP counts (24 per half for the ECal, 9 per half for the HCal) come only from [[ruan2026-fcs-specs-email-note]].
+- Electronics: "new ADC + trigger electronics" [s4]. The talk does **not** mention DEP boards, SiPM type or bias. The DEP counts (24 per half for the ECal, 9 per half for the HCal) come only from [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md).
 - Trigger: FCS triggers exist for jet patches, di-jets, DY, J/ψ, EM, hadron and high-tower thresholds, with rates on [s42]; the preshower comes from the EPD. Thresholds are not given.
 - Comparison with the email (table under s12–s13): all counts, the HCal geometry and the ECal sampling structure agree. The ECal tower face is 5.52 cm vs 5.542 cm (rounding). The talk's ECal length (33 cm) and λ (0.85) differ from the email (37.73 cm, 0.93 λ); my estimate from the layers is ≈ 0.90 λ.
 - Resolution requirements [s4]: ECal ~10%/√E (pp, pA) and ~20%/√E (AA); HCal ~50%/√E + 10%.

@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Wu 2007 — Curated Notes
 
-> **Full source:** [[wu2007-star-barrel-tof]] · Companion notes to [[wu2007-star-barrel-tof]] (full source; a full-content paraphrase).
+> **Full source:** [wu2007-star-barrel-tof](wu2007-star-barrel-tof.md) · Companion notes to [wu2007-star-barrel-tof](wu2007-star-barrel-tof.md) (full source; a full-content paraphrase).
 > **DOI:** https://doi.org/10.1088/0954-3899/34/8/S83 · arXiv: none
 
 ## Bibliographic
@@ -96,6 +96,6 @@ Bridge between the 2002 USTC prototypes and the as-built STAR barrel TOF: gives 
 
 ## Related
 
-- Synthesis: [[star-barrel-tof]] · [[mrpc-technology]] · [[open-questions]]
-- Notes: [[shao2002-mrpc-beam-test-note]] (ref. [2], prototype beam test) · [[llope2012-star-mrpc-systems-note]] (final system, Table 1 includes these TOFr runs)
-- [[schambach2006-star-tof-electronics-note]] — contemporary (2006) electronics design paper: readout chain, MRPC and tray construction, timing budget, cosmic stand; supplies the construction details this paper lacks (gaps excepted).
+- Synthesis: [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [shao2002-mrpc-beam-test-note](shao2002-mrpc-beam-test-note.md) (ref. [2], prototype beam test) · [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (final system, Table 1 includes these TOFr runs)
+- [schambach2006-star-tof-electronics-note](schambach2006-star-tof-electronics-note.md) — contemporary (2006) electronics design paper: readout chain, MRPC and tray construction, timing budget, cosmic stand; supplies the construction details this paper lacks (gaps excepted).

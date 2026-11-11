@@ -38,7 +38,8 @@ rhic_detectors/
 
 - Start at [wiki/index.md](wiki/index.md), then follow the links into the detector pages and, from there, into the per-source notes.
 - [wiki/list.md](wiki/list.md) lists every source with how it was captured.
-- Best viewed in **Obsidian** (open the repo folder as a vault): `[[wikilinks]]`, backlinks and graph view work there. On GitHub, `[[wikilinks]]` show as plain text — navigate by file name (`wiki/synthesis/<page>.md`, `raw/<slug>-note.md`).
+- **On GitHub:** start at [wiki/index.md](wiki/index.md); all cross-references are relative links and click through. Figures do not show (images and PDFs are not in the repo); follow the DOI links in each note.
+- **In Obsidian** (open the repo folder as a vault): links, backlinks, graph view and, on the maintainer's machine, figures all work.
 
 ## Coverage
 

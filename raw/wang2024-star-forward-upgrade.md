@@ -22,7 +22,7 @@ vision_model: "general-purpose subagent (session model, not recorded), 2026-11-0
 - **PDF backup:** `assets/wang2024-star-forward-upgrade/source.pdf` (791,458 bytes, 4 pages; publisher PDF, downloaded 2026-11-06).
 - **Figures:** the 3 figures are raster images embedded in the PDF (1536 px wide, 300 ppi). They were extracted with `pdfimages`, with their alpha masks flattened onto white, and saved as `assets/wang2024-star-forward-upgrade/fig1.png` to `fig3.png`. Each was checked by eye against the page.
 - **Verification:** every number in this note was checked against `pdftotext -layout` of the publisher PDF. The paper has **no equations and no tables**. The only text-layer quirk: the title is stored twice in the text layer (lower case and Title Case, overlapping); the rendered page shows the lower-case title, as on the publisher page.
-- **Related material (not the paper):** the QM2023 talk slides (23 slides; supplied by the repo author, not ingested in this repo). Numbers from them are used only in **[note]** items and are labelled "from the talk slides". [[ruan2026-fcs-specs-email-note]] (FCS construction specs from Lijuan Ruan) is used for comparison only.
+- **Related material (not the paper):** the QM2023 talk slides (23 slides; supplied by the repo author, not ingested in this repo). Numbers from them are used only in **[note]** items and are labelled "from the talk slides". [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (FCS construction specs from Lijuan Ruan) is used for comparison only.
 - Figure descriptions were added by a separate figure pass that looked at the images.
 
 ---
@@ -145,11 +145,11 @@ Supported by NSFC (Grants 12075139 and 12075140), MOST China (Grant 2020YFE02020
   So the FST spans roughly 2.4–4.3, consistent with the quoted 2.5 < η < 4 ✓.
 - **[note]** Channel counts ✓:
   - ECal: 1496 = 2 halves × 22 columns × 34 rows (748 per half). Fig. 3 (left and middle) shows a 22-column × 34-row map, so one ECal half.
-  - HCal: 520 = 2 × 13 × 20 (260 per half), using the geometry in [[ruan2026-fcs-specs-email-note]].
-- **[note]** The ±60 cm side peaks in ΔX (Fig. 2) are about half the width of one HCal half: 13 × 9.99 cm = 129.9 cm, from [[ruan2026-fcs-specs-email-note]]. The paper gives only a qualitative reason (the two independent HCal modules in X).
-- **[note]** Readout location: the paper puts the SiPM readout electronics "on the front face". [[ruan2026-fcs-specs-email-note]] says, for the ECal, that the WLS fibres are "read out at the back". These sources cannot resolve which end the SiPM boards sit on. Check against an FCS NIM or design document.
+  - HCal: 520 = 2 × 13 × 20 (260 per half), using the geometry in [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md).
+- **[note]** The ±60 cm side peaks in ΔX (Fig. 2) are about half the width of one HCal half: 13 × 9.99 cm = 129.9 cm, from [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md). The paper gives only a qualitative reason (the two independent HCal modules in X).
+- **[note]** Readout location: the paper puts the SiPM readout electronics "on the front face". [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) says, for the ECal, that the WLS fibres are "read out at the back". These sources cannot resolve which end the SiPM boards sit on. Check against an FCS NIM or design document.
 
-### Comparison with [[ruan2026-fcs-specs-email-note]] (and the talk slides)
+### Comparison with [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (and the talk slides)
 
 | Quantity | This paper | Talk slides (QM2023) | ruan2026-fcs-specs-email | Agreement |
 |---|---|---|---|---|
@@ -165,7 +165,7 @@ Supported by NSFC (Grants 12075139 and 12075140), MOST China (Grant 2020YFE02020
 | Readout | SiPM, front face, with EIC R&D | SiPMs, used in trigger; same SiPM readout for ECal and HCal | SiPM | ✓ (location: see [note] above) |
 | Halves | HCal: "two independent modules in X" | "2 movable halves inside and outside of ring" | North and South halves | ✓ |
 
-- **[note]** ECal depth: the talk's 33 cm is shorter than the 37.73 cm stack depth computed in [[ruan2026-fcs-specs-email-note]] (66 × 4.24 mm + 65 × 1.50 mm). The 33 cm may be a rounded or differently defined length; neither source explains it.
+- **[note]** ECal depth: the talk's 33 cm is shorter than the 37.73 cm stack depth computed in [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (66 × 4.24 mm + 65 × 1.50 mm). The 33 cm may be a rounded or differently defined length; neither source explains it.
 - **[note]** ECal λ_I recomputed from the email's layer stack, using PDG λ_I of 17.59 cm for Pb and 77.07 cm for polystyrene: 9.75/17.59 + 26.4/77.07 = 0.55 + 0.34 = **0.90 λ_I**. This sits between the talk's 0.85 and the email's 0.93. The same stack gives 9.75/0.561 + 26.4/41.31 = **18.0 X₀** ✓ (slides 18; email 18.1).
 - **[note]** Geometric acceptance from the email's numbers, ignoring the unknown gap at the beam pipe: one ECal half is 22 × 5.542 = 121.9 cm wide and 34 × 5.542 = 188.4 cm tall.
   - At z = 710.16 cm the outer edge (x = 121.9 cm) is at η = 2.46, and the outer corner at η = 2.23.
@@ -180,14 +180,14 @@ Supported by NSFC (Grants 12075139 and 12075140), MOST China (Grant 2020YFE02020
 **(a) Components and coverage.** Everything is on the STAR west side, facing the RHIC blue beam, over 2.5 < η < 4:
 - **FST:** 3 silicon disks inside the TPC at z = 152–179 cm (slides: 152, 165, 179 cm), 12 modules per disk, fine φ and coarse R granularity.
 - **FTT (sTGC):** 4 planes of 4 pentagon modules at z = 300–360 cm (slides: 307, 325, 343, 361 cm), inside the magnet pole-tip opening.
-- **FCS:** about 7 m from the IP. ECal front at z = 710.16 cm and HCal front at z = 782.63 cm, per [[ruan2026-fcs-specs-email-note]].
+- **FCS:** about 7 m from the IP. ECal front at z = 710.16 cm and HCal front at z = 782.63 cm, per [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md).
 - The FTS gives up to 7 points per track (3 FST + 4 FTT).
 
 **(b) FCS design.**
 - **ECal:** refurbished PHENIX Pb–scintillator calorimeter, 1496 channels. From the talk slides: 5.52 × 5.52 × 33 cm³ towers; 66 cells of 1.5 mm Pb / 4 mm scintillator; 36 WLS fibres per cell; 18 X₀ and 0.85 λ_I; PMTs replaced by SiPMs.
 - **HCal:** Fe–scintillator sandwich, 520 channels. From the talk slides: 20 mm Fe / 3 mm scintillator; 10 × 10 × 84 cm³ towers.
 - **Readout:** SiPM-based front-end electronics "on the front face", developed with the EIC R&D group, with attenuator and bias adjustable on the front-end board. The paper itself gives no tower dimensions or depths.
-- **Match with [[ruan2026-fcs-specs-email-note]]:** channel counts (1496 = 2 × 22 × 34; 520 = 2 × 13 × 20), layer structure, HCal tower size and depth, and 18 X₀ all agree. Differences: ECal tower depth (slides 33 cm vs email 37.73 cm), ECal λ (0.85 vs 0.93; my recomputation gives 0.90), and readout end ("front face" in the paper vs WLS fibres "read out at the back" in the email). See the comparison table.
+- **Match with [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md):** channel counts (1496 = 2 × 22 × 34; 520 = 2 × 13 × 20), layer structure, HCal tower size and depth, and 18 X₀ all agree. Differences: ECal tower depth (slides 33 cm vs email 37.73 cm), ECal λ (0.85 vs 0.93; my recomputation gives 0.90), and readout end ("front face" in the paper vs WLS fibres "read out at the back" in the email). See the comparison table.
 
 **(c) Performance.**
 - **Energy resolution:** no number is given, for either calorimeter.

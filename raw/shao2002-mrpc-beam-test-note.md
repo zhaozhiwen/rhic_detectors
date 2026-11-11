@@ -18,7 +18,7 @@ versions_checked: 2026-11-09
 
 # Shao 2002 — Curated Notes
 
-> **Full source:** [[shao2002-mrpc-beam-test]] · Companion notes to [[shao2002-mrpc-beam-test]] (full source; a full-content paraphrase).
+> **Full source:** [shao2002-mrpc-beam-test](shao2002-mrpc-beam-test.md) · Companion notes to [shao2002-mrpc-beam-test](shao2002-mrpc-beam-test.md) (full source; a full-content paraphrase).
 > **DOI:** https://doi.org/10.1016/S0168-9002(02)01355-4 · arXiv: none
 
 ## Bibliographic
@@ -26,7 +26,7 @@ versions_checked: 2026-11-09
 - **Title:** Beam test results of two kinds of multi-gap resistive plate chambers
 - **Authors:** M. Shao, L.J. Ruan, H.F. Chen, J. Wu (corresponding), C. Li, Z.Z. Xu, X.L. Wang, S.L. Huang, Z.M. Wang, Z.P. Zhang — 10 authors, all USTC (Hefei).
 - **Journal:** Nucl. Instrum. Meth. A 492 (2002) 344–350. PACS 12.38Qk; 29.40Gx; 29.40Cs.
-- **Cited as:** ref. [2] ("final MRPC design", CERN PS T10 test) in [[wu2007-star-barrel-tof-note]].
+- **Cited as:** ref. [2] ("final MRPC design", CERN PS T10 test) in [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md).
 
 ## What kind of paper
 
@@ -113,9 +113,9 @@ USTC built and beam-tested a 6-gap and a 10-gap multi-gap RPC at the CERN PS-T10
 
 ## Relevance
 
-Earliest USTC multi-cell MRPC prototype for the STAR barrel TOF; sets the glass/gap/gas lineage and the < 100 ps STAR PID motivation. **[note]** The production STAR TOF MRPC differs (5 gaps, different glass and pad layout; see [[llope2012-star-mrpc-systems-note]]), so use this paper for prototype performance, not as-built geometry.
+Earliest USTC multi-cell MRPC prototype for the STAR barrel TOF; sets the glass/gap/gas lineage and the < 100 ps STAR PID motivation. **[note]** The production STAR TOF MRPC differs (5 gaps, different glass and pad layout; see [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md)), so use this paper for prototype performance, not as-built geometry.
 
 ## Related
 
-- Synthesis: [[mrpc-technology]] · [[star-barrel-tof]] · [[open-questions]]
-- Notes: [[wu2007-star-barrel-tof-note]] (cites this as ref. [2]) · [[llope2012-star-mrpc-systems-note]] (final TOF and MTD MRPCs)
+- Synthesis: [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md) (cites this as ref. [2]) · [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (final TOF and MTD MRPCs)
