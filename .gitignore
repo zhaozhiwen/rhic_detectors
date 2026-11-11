@@ -1,0 +1,25 @@
+# Obsidian vault config — per-machine UI state, not wiki content.
+# (workspace-<machine>.json churns on every pane move and multiplies per machine.)
+.obsidian/
+
+# PUBLIC REPO: paper PDFs, figure images and original non-paper files
+# (.docx emails, slide decks, status-sheet PDFs) are NOT published. They are
+# not ours to redistribute, so raw/assets/ stays on the maintainer's machine.
+# Obsidian shows the figures locally; on GitHub the figure embeds do not
+# render and readers follow the DOI / arXiv links in each raw/<slug>-note.md.
+raw/assets/
+*.pdf
+
+# Quarantine folder for files waiting for the user to delete them.
+_to_delete/
+
+# Python cache from scripts/
+__pycache__/
+*.pyc
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
