@@ -2,7 +2,7 @@
 title: STAR Muon Telescope Detector (MTD)
 tags: [experiment, detector, technology, measurement, status]
 sources: [ruan2009-mtd-concept.md, ruan2009-mtd-concept-note.md, yang2014-mtd-cosmic-calibration.md, yang2014-mtd-cosmic-calibration-note.md, huang2016-mtd-muon-id.md, huang2016-mtd-muon-id-note.md, llope2012-star-mrpc-systems.md, llope2012-star-mrpc-systems-note.md, beddo2003-bemc.md, beddo2003-bemc-note.md, star2026-detector-status.md, star2026-detector-status-note.md]
-updated: 2026-11-09
+updated: 2026-11-11
 ---
 
 # STAR Muon Telescope Detector (MTD)
@@ -53,9 +53,9 @@ As-built coverage (45% at \|η\| < 0.5) is smaller than the 2009 plan (56% at \|
 
 - **Absorber**: backlegs (≈ 61 cm Fe, ≈ 3.6 λ_I) + BEMC (≈ 0.7 λ_I) [note]; papers say "five interaction lengths" (2009), "about 5 absorption lengths" (2016), "about 6 interaction lengths (BEMC + back-legs)" (Llope 2012). See [star-magnet-absorber](star-magnet-absorber.md).
 - **Resolution behind steel**: 2 GeV/c collision muons scatter by ≈ 10 cm and 100 ps in the backlegs [yang2014-mtd-cosmic-calibration-note](../../raw/yang2014-mtd-cosmic-calibration-note.md); consistent with σ_z ≈ 10 cm in 2009 prototype data.
-- **2008 d+Au prototype** [ruan2009-mtd-concept-note](../../raw/ruan2009-mtd-concept-note.md): with MTD-hit association only, prompt muons are 6–10% of muon candidates; pion decays 30–40%, rest mostly kaon decays within the first ~2 m. Tight dE/dx (nσ_π > 1) raises primary/secondary to 1/6–1/3 at 26% efficiency. Within \|Δz\| < 20 cm, matching + dE/dx + velocity give muon purity > 80%. Simulation: < 1% of hadrons accepted.
+- **2008 d+Au prototype** [ruan2009-mtd-concept-note](../../raw/ruan2009-mtd-concept-note.md): with MTD-hit association only, prompt muons are 6–10% of muon candidates; pion decays 30–40%, rest mostly kaon decays within the first ~2 m. Tight dE/dx (nσ_π > 1) raises primary/secondary to 1/6–1/3 at 26% efficiency. Within \|Δz\| < 20 cm, matching + dE/dx + velocity give muon purity > 80%. Simulation: < 1% of hadrons accepted (the quoted rejection factor 50–100 would mean 1–2% [note]).
 - **Matching cut (2014)**: Δφ < 0.2 rad (HTML, PDF and arXiv agree); 2π/30 = 0.209 rad ⇒ same-backleg match, very loose (≈ 33σ) [note].
-- **p+p 500 GeV (2016)** [huang2016-mtd-muon-id-note](../../raw/huang2016-mtd-muon-id-note.md): likelihood-ratio method plateau ≈ 90% for p_T > 3 GeV/c (≈ 80% for other methods); J/ψ efficiency 0.81 (probed muon); significance ×1.38 with one muon, ×2.0 (S/√B = 31.89) with both. All methods cut background by > 65%. The conclusion's "about 60%" efficiency conflicts with the 81% (tagged [source issue]).
+- **p+p 500 GeV (2016)** [huang2016-mtd-muon-id-note](../../raw/huang2016-mtd-muon-id-note.md): likelihood-ratio method plateau ≈ 90% for p_T > 3 GeV/c (text: ≈ 80% for the other methods, which matches the MC; the Fig. 6 data plateaus are ≈ 0.67 straight cuts and ≈ 0.72 N−1 [note], see [open-questions](open-questions.md)); J/ψ efficiency 0.81 (probed muon); significance ×1.38 with one muon, ×2.0 (S/√B = 31.89) with both. All methods cut background by > 65%. The conclusion's "about 60%" efficiency conflicts with the 81% (tagged [source issue]).
 - **Triggers**: analog OR per module end to Level-0; dimuon trigger 2013 required ≥ 2 MTD hits in coincidence with the bunch crossing ([star-daq-trigger](star-daq-trigger.md)).
 - Comparison to calorimeter-based π/μ separation: [pi-mu-separation-calorimetry](pi-mu-separation-calorimetry.md).
 
@@ -65,7 +65,7 @@ As-built coverage (45% at \|η\| < 0.5) is smaller than the 2009 plan (56% at \|
 2. **"About 5 interaction/absorption lengths"**: steel alone ≈ 3.6 λ_I; + BEMC ≈ 0.7 λ_I ⇒ ≈ 4.3 λ_I; coil and TOF/TPC add a little; "about 5" is a generous round number [note].
 3. **Backleg field**: 1.2 T (2009) vs −1.26 T (2014, used in the extrapolation; opposite to the 0.5 T central field). Yang also says t_Steel uses 0.5 T; effect on timing ≪ 1 ps, matters only for position matching [note].
 4. **TOF coverage**: −1 < η < 1 (2009), "η < 1" (2007), \|η\| < 0.9 (2014). As built: \|η\| < 0.9 ([star-barrel-tof](star-barrel-tof.md)).
-5. **Strips per module (2009 plan)**: 2160/540 = 4 vs 6 on the prototype; built type B has 12. The 2009 channel count is obsolete.
+5. **Strips per module (2009 plan)**: 2160/540 = 4, which does not match the 6 strips per prototype module (the paper does not state strips per module for the full design); built type B has 12. The 2009 channel count is obsolete.
 6. **Azimuthal coverage (2009)**: 75% (bars, Fig. 2) vs 56% (text). Unexplained.
 7. **Δφ < 0.2 rad (2014)**: not a typo; same-backleg match.
 

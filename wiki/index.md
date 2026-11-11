@@ -1,7 +1,7 @@
 ---
 title: index — RHIC detectors
 type: index
-updated: 2026-11-10
+updated: 2026-11-11
 ---
 
 # index — RHIC detectors
@@ -11,7 +11,7 @@ updated: 2026-11-10
 Literature study of the RHIC detectors listed on the SoLID wiki *RHIC detectors* page (https://solid.jlab.org/wiki/index.php?title=RHIC_detectors); so far STAR only. The wiki uses a **three-layer architecture**:
 
 1. **Thematic wiki pages** in `wiki/synthesis/` — cross-cutting syntheses per detector system and topic (below). No per-paper pages. The `wiki/` root holds this `index.md`, `list.md` (flat raw-source inventory) and `log.md` (activity log).
-2. **Per-source notes** `raw/<slug>-note.md` — the bridge layer: bibliographic data, key numbers, caveats; links up to thematic pages and down to the full source. Thematic pages cite these notes by wikilink, never the full source directly.
+2. **Per-source notes** `raw/<slug>-note.md` — the bridge layer: bibliographic data, key numbers, caveats; links up to thematic pages and down to the full source. Thematic pages cite these notes by relative Markdown link, never the full source directly.
 3. **Full sources** `raw/<slug>.md` — full-content paraphrase of each paper, talk, email or status sheet, with equations, numbers and tables reproduced exactly and figure descriptions.
 
 Conventions: [note] = derived or interpretive, not stated in a source; "Zhiwen, personal communication, 2026-11-09" = stated by Zhiwen, not in any source. Source counts (N) are raw/ sources.
@@ -37,7 +37,7 @@ Conventions: [note] = derived or interpretive, not stated in a source; "Zhiwen, 
 - [star-magnet-absorber](synthesis/star-magnet-absorber.md) — STAR flux-return backlegs: 30 bars at 12°, 6.85 m, ≈ 61 cm thick × 57 cm wide at r = 363 cm, 1.2 / −1.26 T; absorber budget steel ≈ 3.6 λ_I + BEMC ≈ 0.7 λ_I vs papers' "about 5"; multiple scattering 10 cm / 100 ps at 2 GeV/c. (5 sources)
 
 ### Open questions
-- [open-questions](synthesis/open-questions.md) — Open issues 9, 11–16 (strip signal speed, MTD 56% coverage, Run-12 z resolution, TOF construction details, MTD DAQ path, FCS discrepancies, TOF pad/glass dimensions 3.3 vs 3.5 cm) with next steps; unverified from-memory items; scope gap. (10 sources)
+- [open-questions](synthesis/open-questions.md) — Open issues 9, 11–20 (strip signal speed, MTD 56% coverage, Run-12 z resolution, TOF construction details, MTD DAQ path, FCS discrepancies, TOF pad/glass dimensions 3.3 vs 3.5 cm, EEMC SMD depth, MTD muon-ID data plateaus, 2009 MTD strip gap and hadron rejection) with next steps; unverified from-memory items; scope gap. (11 sources)
 
 ## Navigation
 - [list](list.md) — flat inventory of all raw sources (14), with route and ingest date.

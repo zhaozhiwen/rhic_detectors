@@ -56,6 +56,7 @@ rhic_detectors/
 - `wiki/index.md` — thematic reading path: `wiki/synthesis/` pages grouped by page type. Does not list raw sources.
 - `wiki/list.md` — flat inventory of every raw source (format below); lint requires every `raw/<slug>.md` to be linked there (`raw_source_missing_from_list`).
 - `wiki/log.md` — append-only session log.
+- `raw/assets/<slug>/source.txt`: mechanical `pdftotext -layout` extract of the local PDF, made for sources whose only full text is the PDF (Route 3), used to check Layer 3 (user decision, 2026-11-11). Local only (git-ignored with `raw/assets/`); never pasted into the wiki.
 - Nothing else at the root without asking the user. Scratch files (page renders, contact sheets, OCR output, HTML dumps, converted drafts) live **outside the repo** (cloud container scratch / `/tmp`, or device `$HOME` outside `mnt/`), never in `raw/` or `raw/assets/`.
 
 ## Tooling
@@ -65,7 +66,8 @@ Scripts run from the repo root: `python3 scripts/lint.py`, `python3 scripts/inge
 ## Public repo and git
 
 - **Not published: paper PDFs and figure images** (user decision, 2026-11-09). `raw/assets/` and `*.pdf` are git-ignored and stay on the user's machine. Figure embeds `![…](assets/<slug>/figN.png)` render in local Obsidian; on GitHub they show as broken images — expected; readers follow the DOI/arXiv links in the note. Never move a figure or PDF out of `raw/assets/` to get it rendered on GitHub.
-- **Copyright:** Layer 3 is a paraphrase, the Layer 2 abstract is paraphrased; numbers, equations, tables and references are facts and are kept exact.
+- **Layer 3 is local only** (user decision, 2026-11-11): `raw/<slug>.md` is git-ignored (`raw/*.md`, `!raw/*-note.md`); only Layer 2 notes and Layer 1 pages are published. Links to `<slug>.md` from notes and `list.md` are dead on GitHub — expected.
+- **Copyright:** Layer 3 is a full-content paraphrase (never a verbatim copy of a copyrighted source), the Layer 2 abstract is paraphrased; numbers, equations, tables and references are facts and are kept exact.
 - **Non-paper sources are published** (user decision): an email from a STAR collaborator, an internal STAR detector-status sheet, internal STAR talk slides. Record `source_type:` (`email | status-sheet | talk-slides | paper`) in both the Layer 3 and the Layer 2 frontmatter. The originals (.docx, slide PDF, sheet PDF) stay in `raw/assets/<slug>/`, local only. Do not copy personal contact details (email addresses, phone numbers) out of emails or internal documents; ask the user before publishing anything an internal source marks as restricted.
 - **arXiv copies are not kept where a publisher version exists** (user decision): no arXiv PDF or arXiv-based full text in `raw/assets/` once the publisher version is captured; the arXiv id is still recorded as a link in the note.
 - **The user runs git himself, from native Windows.** Claude never runs `git commit/push/pull/rebase/reset/checkout`, never changes remotes or repo visibility, and leaves changes uncommitted, telling the user what changed. (The Cowork device shell cannot `unlink`, so git there litters `tmp_obj_*` / `.lock` files and aborts.)

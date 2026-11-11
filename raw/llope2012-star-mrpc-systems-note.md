@@ -7,7 +7,7 @@ authors: "W.J. Llope (Rice University), for the STAR Collaboration"
 journal: "Nucl. Instrum. Meth. A 661 (2012) S110–S113 (RPC 2010 workshop proceedings)"
 doi: "10.1016/j.nima.2010.07.086"
 arxiv: none
-notes_updated: 2026-11-10
+notes_updated: 2026-11-11
 ingested_version: "Publisher version of record, read 2026-11-06 via Route 1 (ScienceDirect HTML in Chrome, JLab access), verified against the publisher PDF (4 pages)"
 earlier_version: []
 later_version: []
@@ -33,7 +33,7 @@ versions_checked: 2026-11-09
 
 ## Abstract (paraphrased)
 
-STAR has installed a ~50 m² MRPC time-of-flight system read out with custom electronics built on CERN NINO and HPTDC chips, after prototypes ran in STAR 2002–2006; ~70% was installed for Run 9. A future Muon Telescope Detector would use very large double-ended MRPCs behind the magnet back-legs to identify muons by timing. Design and performance of the TOF prototypes, final TOF and MTD prototypes are presented.
+STAR has installed a 50 m² MRPC time-of-flight system read out with custom electronics built on CERN NINO and HPTDC chips, after prototypes ran in STAR 2002–2006; ~70% was installed for Run 9. A future Muon Telescope Detector would use very large double-ended MRPCs behind the magnet back-legs to identify muons by timing. Design and performance of the TOF prototypes, final TOF and MTD prototypes are presented.
 
 ## Key numbers
 

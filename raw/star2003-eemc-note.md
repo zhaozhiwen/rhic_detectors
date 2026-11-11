@@ -7,7 +7,7 @@ authors: "STAR EEMC group: C.E. Allgower et al., 46 authors (alphabetical)"
 journal: "Nucl. Instrum. Meth. A 499 (2003) 740–750"
 doi: 10.1016/S0168-9002(02)01971-X
 arxiv: none
-notes_updated: 2026-11-09
+notes_updated: 2026-11-11
 ingested_version: "Published journal version via publisher HTML (ScienceDirect, Route 1); Table 1 rebuilt from the publisher PDF; all numbers checked against the publisher PDF (captured 2026-11-09)"
 earlier_version: []
 later_version: []
@@ -52,7 +52,7 @@ The EEMC gives full-azimuth coverage over 1.086 ≤ η ≤ 2.00 for high-pT phot
 - Cosmic MIP per 4 mm tile: 2.3–3.2 photoelectrons.
 
 **SMD**
-- At ≈ 5 X₀ (after the 5th radiator). Extruded triangular strips, 7 mm high, 10 mm base, 1.0 mm axial WLS hole; u and v planes; 286 strips per plane per 30° sector (572 per sector); radii 77.7–217 cm; three layers, 36 mm total depth.
+- At ≈ 5 X₀ (after the 5th radiator; depth in cm not given, see caveats). Extruded triangular strips, 7 mm high, 10 mm base, 1.0 mm axial WLS hole; u and v planes; 286 strips per plane per 30° sector (572 per sector); radii 77.7–217 cm; three layers, 36 mm total depth.
 - Readout: Hamamatsu R5900-M16 16-anode MAPMTs, 3 boxes × 12 MAPMTs per 30° sector; crosstalk ∼1%. Light yield 0.6 p.e. per mm of strip (MIP).
 - Simulated π⁰/γ: 80% π⁰ rejection at 80% γ retention, 10–40 GeV.
 
@@ -71,7 +71,7 @@ The EEMC gives full-azimuth coverage over 1.086 ≤ η ≤ 2.00 for high-pT phot
 - Tower occupancy < 10% at L_pp = 2 × 10³²; absolute calibration ±2% (±10% online); SMD relative gains ≲ ±10%; < 2% shower loss in cracks; timing < 1 RHIC beam period (110 ns).
 
 **Calibration**
-- Tower gain matching ±10% before beam; final ±2% in situ (π⁰, Z⁰ peaks; ρ± cross-check); MAPMT hardware compensation ±20% via ADC gain.
+- Tower gain matching ±10% before beam; final ±2% in situ (π⁰ and "Z⁰" mass peaks as printed in §6 — **[source issue]** η⁰ meant, as in the §3 pairing "π⁰ and η⁰"; ρ± cross-check); MAPMT hardware compensation ±20% via ADC gain.
 - Systems: 355 nm pulsed UV laser via leaky fibres (α-source-monitored); pulsed LEDs (tower PMTs, one pre/post MAPMT pixel, SMD WLS fibres); 300 μCi ⁶⁰Co rod source.
 - Scale chain: cosmics (detector horizontal) → laser for dynamic range → ⁶⁰Co (primary) / cosmics vertical (secondary) to transfer.
 
@@ -98,11 +98,12 @@ Design description; PYTHIA + GEANT simulations (π⁰/γ via SMD peak-integral v
 - [note] MIP-based sampling estimate 10.3% vs quoted EM 5.0%; rule-of-thumb stochastic term ≈ 17%/√E vs the 16%/√E requirement.
 - [note] L_pp in Table 1 has no units (presumably cm⁻² s⁻¹); "110 ns" is a rounded bunch spacing.
 - [note] Dates (2001 RHIC run test, summer-2002 lower-half install, upper half a year later) are plans at the time of writing.
+- [note] SMD depth in cm behind the front face is not checkable from the paper: only "after the fifth radiator" / ≈ 5 X₀ is given, and the front plate and gaps are not itemised (an earlier radius-based estimate of ≈ 12–15 cm was withdrawn on 2026-11-11). See [open-questions](../wiki/synthesis/open-questions.md).
 - Route caveat: HTML Table 1 lost its cell structure (rebuilt from PDF); PDF text layer maps μ→m and ±→7 (300 μCi and 50 mA confirmed on the rendered page). No arXiv copy exists.
 
 ## Relevance
 
-Reference design of the STAR forward EM calorimeter (1.086 ≤ η ≤ 2.00): stack, SMD and pre/postshower layout and the e/h and π⁰/γ strategy. Current status of the EEMC is tracked in [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md).
+Reference design of the STAR forward EM calorimeter (1.086 ≤ η ≤ 2.00): stack, SMD and pre/postshower layout and the e/h and π⁰/γ strategy. Current status of the EEMC is tracked in [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md): as of October 2026 "All", in situ, no readout — from [star2026-detector-status-note](star2026-detector-status-note.md), not from this paper.
 
 ## Related
 

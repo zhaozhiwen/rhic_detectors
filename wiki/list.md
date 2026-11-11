@@ -1,12 +1,12 @@
 ---
 title: list — RHIC detectors raw sources
 type: list
-updated: 2026-11-10
+updated: 2026-11-11
 ---
 
 # list — Raw sources catalog
 
-*Flat inventory of every full source in `raw/`. Every `raw/<slug>.md` must appear here as a wikilink to its slug. See [index](index.md) for the thematic reading path; this is the source-by-source record of what has been ingested, by which route, and when. "Ingested" is the date the source was first read into the collection, not the 2026-11-09 restructure (see [log](log.md)).*
+*Flat inventory of every full source in `raw/`. Every `raw/<slug>.md` must appear here as a relative Markdown link to its slug. See [index](index.md) for the thematic reading path; this is the source-by-source record of what has been ingested, by which route, and when. "Ingested" is the date the source was first read into the collection, not the 2026-11-09 restructure (see [log](log.md)).*
 
 ## Raw sources
 
@@ -14,9 +14,9 @@ updated: 2026-11-10
 |---|---|---|---|---|
 | beddo2003-bemc | [beddo2003-bemc](../raw/beddo2003-bemc.md) — M. Beddo et al., *The STAR Barrel Electromagnetic Calorimeter*, Nucl. Instrum. Meth. A 499 (2003) 725, doi:10.1016/S0168-9002(02)01970-8 | [beddo2003-bemc-note](../raw/beddo2003-bemc-note.md) | Route 1 (ScienceDirect HTML; formulas and Table 1 from the PDF) | 2026-11-09 |
 | gagliardi2022-star-forward-upgrade-talk | [gagliardi2022-star-forward-upgrade-talk](../raw/gagliardi2022-star-forward-upgrade-talk.md) — C. Gagliardi, *The STAR Forward Upgrade*, talk slides, STAR Juniors meeting, Feb 2022 (not peer-reviewed) | [gagliardi2022-star-forward-upgrade-talk-note](../raw/gagliardi2022-star-forward-upgrade-talk-note.md) | talk slides (PDF) | 2026-11-06 |
-| huang2016-mtd-muon-id | [huang2016-mtd-muon-id](../raw/huang2016-mtd-muon-id.md) — T.C. Huang et al., *Muon identification with Muon Telescope Detector at the STAR experiment*, Nucl. Instrum. Meth. A 833 (2016) 88, doi:10.1016/j.nima.2016.07.024 | [huang2016-mtd-muon-id-note](../raw/huang2016-mtd-muon-id-note.md) | Route 2 (arXiv HTML) | 2026-11-05 |
+| huang2016-mtd-muon-id | [huang2016-mtd-muon-id](../raw/huang2016-mtd-muon-id.md) — T.C. Huang et al., *Muon identification with Muon Telescope Detector at the STAR experiment*, Nucl. Instrum. Meth. A 833 (2016) 88, doi:10.1016/j.nima.2016.07.024 | [huang2016-mtd-muon-id-note](../raw/huang2016-mtd-muon-id-note.md) | Route 1 (ScienceDirect HTML; formulas and Table 1 checked against the PDF) | 2026-11-11 |
 | llope2012-star-mrpc-systems | [llope2012-star-mrpc-systems](../raw/llope2012-star-mrpc-systems.md) — W.J. Llope (STAR), *Multigap RPCs in the STAR experiment at RHIC*, Nucl. Instrum. Meth. A 661 (2012) S110, doi:10.1016/j.nima.2010.07.086 | [llope2012-star-mrpc-systems-note](../raw/llope2012-star-mrpc-systems-note.md) | Route 1 (ScienceDirect HTML) | 2026-11-06 |
-| ruan2009-mtd-concept | [ruan2009-mtd-concept](../raw/ruan2009-mtd-concept.md) — L. Ruan et al., *Perspectives of a mid-rapidity dimuon program at the RHIC: a novel and compact muon telescope detector*, J. Phys. G 36 (2009) 095001, doi:10.1088/0954-3899/36/9/095001 | [ruan2009-mtd-concept-note](../raw/ruan2009-mtd-concept-note.md) | Route 2 (arXiv HTML) | 2026-11-05 |
+| ruan2009-mtd-concept | [ruan2009-mtd-concept](../raw/ruan2009-mtd-concept.md) — L. Ruan et al., *Perspectives of a mid-rapidity dimuon program at the RHIC: a novel and compact muon telescope detector*, J. Phys. G 36 (2009) 095001, doi:10.1088/0954-3899/36/9/095001 | [ruan2009-mtd-concept-note](../raw/ruan2009-mtd-concept-note.md) | Route 2 (arXiv HTML; text aligned to the publisher PDF 2026-11-11) | 2026-11-05 |
 | ruan2026-fcs-specs-email | [ruan2026-fcs-specs-email](../raw/ruan2026-fcs-specs-email.md) — L. Ruan, email of 2026-10-29, *STAR Forward Calorimeter System (FCS): ECal and HCal* construction specs | [ruan2026-fcs-specs-email-note](../raw/ruan2026-fcs-specs-email-note.md) | email (docx) | 2026-11-05 |
 | schambach2006-star-tof-electronics | [schambach2006-star-tof-electronics](../raw/schambach2006-star-tof-electronics.md) — J. Schambach et al., *STAR Time of Flight Readout Electronics, DAQ, and Cosmic Ray Test Stand*, 2006 IEEE NSS Conf. Rec. vol. 1, 485, doi:10.1109/NSSMIC.2006.356203 | [schambach2006-star-tof-electronics-note](../raw/schambach2006-star-tof-electronics-note.md) | Route 1 (IEEE Xplore HTML; checked against the PDF) | 2026-11-10 |
 | shao2002-mrpc-beam-test | [shao2002-mrpc-beam-test](../raw/shao2002-mrpc-beam-test.md) — M. Shao et al., *Beam test results of two kinds of multi-gap resistive plate chambers*, Nucl. Instrum. Meth. A 492 (2002) 344, doi:10.1016/S0168-9002(02)01355-4 | [shao2002-mrpc-beam-test-note](../raw/shao2002-mrpc-beam-test-note.md) | Route 3 (PDF) | 2026-11-06 |

@@ -7,7 +7,7 @@ authors: "M. Shao et al. (10 authors; USTC Hefei; corresponding author J. Wu)"
 journal: "Nucl. Instrum. Meth. A 492 (2002) 344–350"
 doi: "10.1016/S0168-9002(02)01355-4"
 arxiv: none
-notes_updated: 2026-11-09
+notes_updated: 2026-11-11
 ingested_version: "Publisher version of record (ScienceDirect PDF, 7 pages), read 2026-11-06 via Route 3 (PDF only; pdftotext + page renders read by eye)"
 earlier_version: []
 later_version: []
@@ -106,7 +106,8 @@ USTC built and beam-tested a 6-gap and a 10-gap multi-gap RPC at the CERN PS-T10
 - **[source issue]** Fig. 3 label "Scintilators"; caption "PS-10" for PS-T10.
 - **[source issue]** "sixth-oder" typo.
 - **[source issue]** Fig. 5 x-axis tick left of 0 printed "10" instead of "−10".
-- Ambiguity: Fig. 5 σ alone is 66.2 ps (59.0 ps if 30 ps start removed in quadrature); Fig. 10 σ 57.7 ps (49.2 ps start-removed). Whether the quoted 65 ps / 55 ps are start-subtracted is unresolved.
+- Ambiguity: Fig. 5 σ alone is 66.2 ps (59.0 ps if 30 ps start removed in quadrature), although the text says the start jitter was subtracted; whether the quoted 65 ps is start-subtracted is unresolved.
+- **[note]** Fig. 10 σ is 57.7 ps raw (49.2 ps with the 30 ps start removed in quadrature). The quoted "about 55 ps" is closer to the raw 57.7 ps, consistent with the text saying that this resolution includes the electronic jitter.
 - Ambiguity: which chamber the 15 kV / < 5 nA dark current refers to; whether the fiber-placement rules apply to both chambers; how 10-gap pad signals are combined.
 - 10-gap text says 98% at 22.5 kV; plot reads ≈98.9%. Fig. 7 Z scan at a different HV (±8.25 kV) than X scan, unmentioned.
 - Route caveat: Route 3 (PDF only); text layer garbles Ω, ×, ±, μ, ° — rendered pages used; values read from figures are approximate.

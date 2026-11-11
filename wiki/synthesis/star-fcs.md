@@ -2,7 +2,7 @@
 title: STAR Forward Calorimeter System (FCS)
 tags: [experiment, detector, status]
 sources: [tsai2015-fcs-prototype.md, tsai2015-fcs-prototype-note.md, wang2024-star-forward-upgrade.md, wang2024-star-forward-upgrade-note.md, gagliardi2022-star-forward-upgrade-talk.md, gagliardi2022-star-forward-upgrade-talk-note.md, ruan2026-fcs-specs-email.md, ruan2026-fcs-specs-email-note.md, star2026-detector-status.md, star2026-detector-status-note.md]
-updated: 2026-11-09
+updated: 2026-11-11
 ---
 
 # STAR Forward Calorimeter System (FCS)
@@ -38,9 +38,9 @@ Forward ECal (re-used PHENIX Pb/scintillator shashlik) + HCal (Fe/scintillator) 
 | | 2014 prototype | As built |
 |---|---|---|
 | ECal | W powder + scintillating fibres (SPACal), 2.5 × 2.5 × 17 cm, 23 X₀, 9600 towers proposed | Pb/Sc shashlik (PHENIX), 5.5 cm, 18 X₀, 1496 towers |
-| HCal | Pb (4% Sb) 10 mm × 63 + 2.5 mm scint, 10 × 10 × 81 cm, 4 λ (≈ 3.8 recomputed [note]), Pb:Sc = 4:1, built to be compensating; 600 towers proposed | steel 20 mm × 36 + 3 mm scint, 84 cm, 4.45 λ, not compensating; 520 towers |
+| HCal | Pb (4% Sb) 10 mm × 63 + 2.5 mm scint, 10 × 10 × 81 cm, 4 λ (≈ 3.8 recomputed for pure Pb, ≈ 3.7 with the Pb(Sb) density ≈ 11.0 g/cm³ [note]), Pb:Sc = 4:1, built to be compensating; 600 towers proposed | steel 20 mm × 36 + 3 mm scint, 84 cm, 4.45 λ, not compensating; 520 towers |
 | Light collection | WLS plate between HCal towers; light guides to MPPCs in the ECal | WLS plate per HCal tower (carried over); WLS fibres in the ECal |
-| Test beam (FNAL 2014) | electrons (11 ± 0.7)%/√E + (0.7 ± 0.2)%; hadrons (58 ± 4)%/√E + (1.5 ± 1.5)% (EM + HCal, weighted, linear sum); e/h ≈ 0.95 above 10 GeV after EM weighting | not measured in these sources |
+| Test beam (FNAL 2014) | electrons (11 ± 0.7)%/√E + (0.7 ± 0.2)%; hadrons (58 ± 4)%/√E + (1.5 ± 1.5)% (EM + HCal, weighted, linear sum); e/h "close to 0.95" above 10 GeV after EM weighting (Fig. 8 points ≈ 0.915–0.945 [note]) | not measured in these sources |
 
 The prototype's W/ScFi calorimetry went on to EIC R&D; the HCal's WLS-plate side readout and SiPM readout survived into the built FCS [note].
 

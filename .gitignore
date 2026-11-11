@@ -10,6 +10,11 @@
 raw/assets/
 *.pdf
 
+# Layer 3 full sources (raw/<slug>.md) are local only (user decision 2026-11-11):
+# only the Layer 2 notes are published.
+raw/*.md
+!raw/*-note.md
+
 # Quarantine folder for files waiting for the user to delete them.
 _to_delete/
 

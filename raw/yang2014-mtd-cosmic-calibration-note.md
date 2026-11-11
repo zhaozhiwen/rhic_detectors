@@ -7,7 +7,7 @@ authors: "C. Yang et al., 38 authors"
 journal: "Nucl. Instrum. Meth. A 762 (2014) 1–6"
 doi: 10.1016/j.nima.2014.05.075
 arxiv: "1402.1078"
-notes_updated: 2026-11-09
+notes_updated: 2026-11-11
 ingested_version: "Published journal version via publisher HTML (ScienceDirect, Route 1), checked against the publisher PDF; critical items also checked in the arXiv v1 text (captured 2026-11-05)"
 earlier_version: []
 later_version: []
@@ -25,7 +25,7 @@ Links: DOI <https://doi.org/10.1016/j.nima.2014.05.075> · arXiv <https://arxiv.
 ## Bibliographic
 
 - **Title:** Calibration and performance of the STAR Muon Telescope Detector using cosmic rays
-- **Authors:** C. Yang, X.J. Huang (corresponding), C.M. Du, B.C. Huang, et al. — 38 authors (BNL, USTC, Tsinghua, IMP Lanzhou, Rice, UC Davis, UT Austin, VECC Kolkata, Texas A&M)
+- **Authors:** C. Yang, X.J. Huang (corresponding), C.M. Du, B.C. Huang, et al. — 38 authors (BNL, USTC, Tsinghua, IMP Lanzhou, Rice, UC Davis, UT Austin, Variable Energy Cyclotron Centre, West Bengal, Texas A&M)
 - **Journal:** Nucl. Instrum. Meth. A 762 (2014) 1–6; doi:10.1016/j.nima.2014.05.075
 - **arXiv:** 1402.1078 [physics.ins-det] (v1)
 - **Keywords:** Muon telescope detector; Cosmic ray; Timing resolution; Spatial resolution
@@ -90,7 +90,7 @@ Cosmic muon crosses MTD, backleg, BEMC, TOF, TPC and is reconstructed as two TPC
 
 ## What the paper does not give
 
-- Signal propagation speed along the strips (no cm/ns value).
+- Signal propagation speed along the strips (no cm/ns value; a 15–18 cm/ns sentence once in the Layer-3 file was not from the paper and was removed on 2026-11-11 — the from-memory value lives in [open-questions](../wiki/synthesis/open-questions.md) #9).
 - Which data set Fig. 5 shows; whether Run 12 values are multiple-scattering-corrected.
 - Module design parameters in Table 1 (despite its caption; they are in the text only).
 - Reconciliation of the 580 mm PC-board width with the 52 cm module size.

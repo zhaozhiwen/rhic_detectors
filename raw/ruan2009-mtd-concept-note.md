@@ -7,13 +7,13 @@ authors: "L. Ruan et al., 22 authors"
 journal: "J. Phys. G: Nucl. Part. Phys. 36 (2009) 095001"
 doi: 10.1088/0954-3899/36/9/095001
 arxiv: "0904.3774"
-notes_updated: 2026-11-09
-ingested_version: "arXiv:0904.3774 v4 (arXiv HTML, Route 2) for structure and figures; text checked line by line against the publisher PDF, which wins where they differ (captured 2026-11-05)"
+notes_updated: 2026-11-11
+ingested_version: "Publisher version, J. Phys. G 36 (2009) 095001: text first taken from the arXiv v4 HTML (Route 2, captured 2026-11-05), then aligned to and checked against the publisher PDF (2026-11-11), which is authoritative; Fig. 1 is a 300-dpi cut from the publisher PDF, Figs 2–11 are arXiv HTML images whose content matches the publisher pages"
 earlier_version: []
 later_version: []
-published_version: "J. Phys. G 36 (2009) 095001 — publisher PDF used as the authority for the Layer-3 text; HTML/arXiv-vs-journal differences listed in the companion"
-version_facts: "Received 30 April 2009, published 17 July 2009 (journal). arXiv HTML built from v4; arXiv title 'Perspectives of a Midrapidity Dimuon Program at RHIC: A Novel and Compact Muon Telescope Detector'. Journal and arXiv PDF numbers agree; differences are wording/typos only."
-versions_checked: 2026-11-09
+published_version: "J. Phys. G 36 (2009) 095001 — the Layer-3 text follows the publisher PDF (IOPscience serves only the abstract, reference list and PDF for this article; no HTML full text)"
+version_facts: "Received 30 April 2009, published 17 July 2009 (journal). arXiv HTML built from v4; arXiv title 'Perspectives of a Midrapidity Dimuon Program at RHIC: A Novel and Compact Muon Telescope Detector'. Journal and arXiv PDF numbers agree; differences are wording/typos only; PACS codes appear only in the arXiv version. Route re-check 2026-11-11: IOPscience still has no HTML full text."
+versions_checked: 2026-11-11
 ---
 
 # Ruan 2009 — MTD concept — curated notes
@@ -27,7 +27,7 @@ Links: DOI <https://doi.org/10.1088/0954-3899/36/9/095001> · arXiv <https://arx
 - **Title:** Perspectives of a mid-rapidity dimuon program at the RHIC: a novel and compact muon telescope detector
 - **Authors:** L. Ruan, G. Lin, Z. Xu, … Y. Wang — 22 authors (BNL, Yale, USTC, UC Berkeley, Rice, Tsinghua). Contact: L. Ruan.
 - **Journal:** J. Phys. G: Nucl. Part. Phys. 36 (2009) 095001 (15 pp); doi:10.1088/0954-3899/36/9/095001
-- **arXiv:** 0904.3774 (HTML from v4). PACS 25.75.Cj, 29.40.Cs (arXiv only).
+- **arXiv:** 0904.3774 (v4 HTML used for the first capture). The arXiv version lists PACS 25.75.Cj, 29.40.Cs; the journal version prints none.
 
 ## What kind of paper
 
@@ -45,13 +45,13 @@ Proposes a large-area, low-cost MTD at mid-rapidity for STAR (and future EIC det
 - Bars "amount to five interaction lengths" each (Sec. 4).
 
 **Long-MRPC module (Sec. 3)**
-- Two stacks, ten gas gaps of 250 μm; six copper pickup strips, 870 × 25 mm² each; double-ended readout.
+- Two stacks, ten gas gaps of 250 μm; six copper pickup strips, 870 × 25 mm² each (strip width 25 mm; the inter-strip gap is not given, so the six strips span ≥ 150 mm [note]); double-ended readout.
 - 12.6 kV, 95% C₂H₂F₄ + 5% iso-butane, 1 atm. Plateau 12.5 < HV < 13.0 kV: efficiency >95%, timing 60–70 ps; position along strip 0.6–1 cm.
 
 **Simulation (full HIJING central Au+Au, full STAR geometry)**
 - MTD on full return bars within |η|<0.8 = 56% of 2π.
 - Match cuts: hit–projection distance within 4 cm, Δt < 400 ps (simple helix extrapolation).
-- Muon (pT>2 GeV/c, from TPC center) efficiency incl. acceptance 40–50% (Fig. 3: about 45%); pion 0.5–1%; all hadrons <1% (yield-weighted). Rejection factor 50–100 at >80% trigger efficiency for prompt muons.
+- Muon (pT>2 GeV/c, from TPC center) efficiency incl. acceptance 40–50% (Fig. 3: about 45%); pion 0.5–1%; all hadrons <1% (yield-weighted). Rejection factor 50–100 at >80% trigger efficiency for prompt muons. [note] A factor 50–100 means 1–2% hadron acceptance, looser than the "<1%" statement (kaons reach ≈1.85% in Fig. 3).
 
 **Prototype in STAR (Sec. 4)**
 - 2007 (200 GeV Au+Au): π/60 in azimuth, −0.25<η<0.25, r ∼400 cm; two long-MRPC modules. 2008 (d+Au, p+p): −0.5<η<0, same radius. 2009: tray with STAR TOF electronics (25 ps time bin).
@@ -86,7 +86,8 @@ GEANT simulation of single muons/hadrons from the TPC centre and HIJING central 
 
 ## What the paper does not give
 
-- Strips per module in the full design (2160/540 = 4 vs six strips in Sec. 3).
+- Strips per module in the full design (2160/540 = 4, which does not match the six strips per prototype module of Sec. 3).
+- The inter-strip gap of the prototype module (only the 25 mm strip width).
 - Signal propagation speed along the strips.
 - Explanation of 56% azimuthal coverage vs the bar-face geometry.
 - Formula behind Table 4 dimuon L2 rates; definition of the ">80% trigger efficiency".
@@ -94,15 +95,15 @@ GEANT simulation of single muons/hadrons from the TPC centre and HIJING central 
 
 ## Source issues and caveats
 
-- [source issue] Fig. 1 arXiv-HTML PNG truncated; the kept `fig1.png` is the publisher-PDF extraction.
+- Fig. 1 image: the arXiv-HTML PNG was truncated and an earlier publisher-PDF extraction had inverted colours; since 2026-11-11 the kept `fig1.png` is a 300-dpi cut from the publisher PDF page (the inverted image is quarantined in `_to_delete/ruan2009-old/`).
 - [source issue] Published Fig. 3 caption prints "(56)" without the % sign (arXiv: "(56%)").
 - [source issue] Fig. 4 caption says 2006–2008; the text covers only the 2007 and 2008 runs.
-- [source issue] The ∼1.2 GeV muon loss is attributed to "multiple scattering in the return bar"; it is ionization loss, and 60 cm Fe alone gives about 0.7–0.8 GeV, so ∼1.2 GeV fits all material/oblique paths better.
-- [source issue] Strips per module: 2160 strips / 540 modules = 4, inconsistent with six strips per module in Sec. 3.
+- [source issue] The ∼1.2 GeV muon loss is attributed to "multiple scattering in the return bar"; it is ionization loss, and 60 cm Fe alone gives about 0.7–0.8 GeV (dE/dx ≈ 11.8–12.6 MeV/cm [note]), so ∼1.2 GeV fits all material/oblique paths better.
+- [note] Strips per module: 2160 strips / 540 modules = 4, which does not match the six strips per prototype module of Sec. 3; the paper does not state strips per module for the full design, which may differ.
 - Other: "25 ps" called a time-bin width (Sec. 4) and a timing resolution (Sec. 5) — bin width is the correct reading; reference typos (Ref. [3] "Saltz H" for Satz; Ref. [22] article number 062301).
 - [note] (from the companion) 30 bars × 57 cm cover ≈75% of the azimuth at r = 363 cm vs the paper's 56%; "five interaction lengths" exceeds 60 cm Fe (≈3.6 λ_I).
 - [note] Figure-reading caveats: Fig. 3 plateau reads 0.40–0.44 (vs "about 45%"); Fig. 7 pion contribution factor ≈0.22–0.51 point by point (vs 30–40%); Fig. 9 shows the MTD ε advantage only over PHENIX (STAR TOF+EMC ≈0.4 is higher); Fig. 10 separates 1S from 2S+3S but not 2S from 3S.
-- Route caveat: arXiv HTML drops leading numbers of several ranges (e.g. −1<η<1, 12.5<HV<13.0 kV); pdftotext of the publisher PDF drops ≳, ⩾, ⩽, ≃, Δ. All values in the companion follow the rendered publisher PDF. The arXiv PDF used for comparison was not kept.
+- Route: text first taken from the arXiv v4 HTML (Route 2, 2026-11-05) and aligned to the publisher J. Phys. G PDF on 2026-11-11, which is authoritative (abstract, body, captions, tables and references follow the journal version). The arXiv HTML dropped leading numbers of several ranges (e.g. −1<η<1, 12.5<HV<13.0 kV); pdftotext of the publisher PDF drops ≳, ⩾, ⩽, ≃, Δ. All values in the companion follow the rendered publisher PDF. The arXiv PDF used for comparison was not kept.
 
 ## Relevance
 

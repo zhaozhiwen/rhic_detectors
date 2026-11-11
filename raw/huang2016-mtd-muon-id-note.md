@@ -7,13 +7,13 @@ authors: "T.C. Huang et al., 12 authors"
 journal: "Nucl. Instrum. Meth. A 833 (2016) 88–93"
 doi: 10.1016/j.nima.2016.07.024
 arxiv: "1601.02910"
-notes_updated: 2026-11-09
-ingested_version: "arXiv:1601.02910 v3 (arXiv HTML, Route 2), cross-checked against the arXiv v3 PDF and rechecked number by number against the publisher PDF (captured 2026-11-05)"
+notes_updated: 2026-11-11
+ingested_version: "Publisher version, Nucl. Instrum. Meth. A 833 (2016) 88–93, via ScienceDirect HTML (Route 1), re-captured 2026-11-11; formulas and Table 1 checked against the publisher PDF; publisher high-resolution figures. Replaces the 2026-11-05 capture (Route 2, arXiv v3 HTML, rechecked against the publisher PDF); no number or statement changed between the two captures"
 earlier_version: []
 later_version: []
-published_version: "Nucl. Instrum. Meth. A 833 (2016) 88–93 — publisher PDF recheck: all numbers match; only text difference is the arXiv duplicated word 'particles particles', corrected in the journal"
-version_facts: "arXiv v3 dated 15 Jul 2016 ('Preprint submitted to NIMA July 18, 2016'). Publisher HTML abstract identical to arXiv abstract. ScienceDirect served no HTML body."
-versions_checked: 2026-11-09
+published_version: "Nucl. Instrum. Meth. A 833 (2016) 88–93 — this is the ingested version; arXiv v3 differs only by the duplicated word 'particles particles', corrected in the journal"
+version_facts: "arXiv v3 dated 15 Jul 2016 ('Preprint submitted to NIMA July 18, 2016'). Publisher abstract identical to the arXiv abstract. ScienceDirect served no HTML body on 2026-11-05 but did on 2026-11-11 (Route 1 re-capture)."
+versions_checked: 2026-11-11
 ---
 
 # Huang 2016 — MTD muon identification — curated notes
@@ -49,7 +49,7 @@ The newly installed STAR MTD enables quarkonium measurements in the dimuon chann
 - 2013 p+p, √s = 500 GeV, MTD dimuon trigger, 28.3 pb⁻¹.
 - MC: J/ψ→μ⁺μ⁻ flat single-particle, GEANT3, embedded; pT smearing mean 1.004 × pT, width 0.022 × pT.
 - Basic selection: pT > 1 GeV/c; DCA < 3 cm; > 15 fit clusters (of 45); > 10 dE/dx clusters; used/possible ≥ 0.52; track projects to triggering MTD hits. >1500 J/ψ candidates.
-- Fig. 1 fit: N = 1584 ± 116, M = 3.086 ± 0.004 GeV/c², σ = 0.056 ± 0.005 GeV/c², S/√B = 15.36 ± 1.14; window [2.92, 3.25] GeV/c².
+- Fig. 1 inset fit (one Gaussian + 4th-order polynomial): χ²/ndf = 53.0/37.0, N = 1584 ± 116, M = 3.086 ± 0.004 GeV/c², σ = 0.056 ± 0.005 GeV/c², S/√B = 15.36 ± 1.14; window [2.92, 3.25] GeV/c².
 
 **Variables and cuts**
 - ΔToF, Δz, Δy × q, nσ_π (Eq. 1, log dE/dx relative to pion). Muon mean nσ_π shifted ≈0.5σ above pions.
@@ -87,7 +87,8 @@ Signal PDFs = opposite-sign minus same-sign pairs in the J/ψ window (data) or e
 ## Source issues and caveats
 
 - [source issue] Conclusion says each method keeps J/ψ "with about 60% of efficiency"; Table 1 has 0.81 for the Likelihood Ratio (Sec. 5: about 80%).
-- [source issue] Fig. 3 caption lists ΔToF among PDF ratios; R uses three variables and the figure has three panels.
+- [note] Fig. 1 main-panel y axis "Counts/Bin" behaves like counts per GeV/c² (bin-width normalised): comparing it with the inset (Events/0.04 GeV/c²) at ≈2.3 and ≈3.1 GeV/c² gives per-GeV/c² values, not per-bin counts. The paper does not say so (vision reading, 2026-11-11).
+- [source issue] Fig. 3 caption lists ΔToF among the PDF ratios shown, but the figure has no ΔToF panel: three ratio panels (Δz, Δy×q, nσ_π) and the legend in the fourth quadrant, consistent with R using three variables.
 - [source issue] Fig. 3 legend calls the solid line "linear extrapolation"; caption/text say bin-to-bin interpolation. Stray comma in the caption text.
 - [source issue] Fig. 4(a) y label misspelled "Probabilty(R)/0.10".
 - [source issue] Fig. 5 caption marker styles (open boxes/open circles/solid triangles) differ from the image (filled squares/stars/triangles).
@@ -97,9 +98,10 @@ Signal PDFs = opposite-sign minus same-sign pairs in the J/ψ window (data) or e
 - [source issue] arXiv v3 duplicated word "particles particles" (fixed in the journal).
 - [source issue] Ref. [9] (LHCb) "J. of Instr. 10 (2013)" — volume/year mismatch.
 - [note] "about 5 absorption lengths" for 61 cm Fe (≈3.6 λ_I) is approximate. Compare 57 cm in [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md) and 60 cm in [ruan2009-mtd-concept-note](ruan2009-mtd-concept-note.md).
-- [note] Abstract "factor of 2" is the both-muon result; probe-only gain is 1.38. Data efficiency plateaus for straight/N−1 (≈0.67, ≈0.72) are below the "about 80%" (which matches MC).
+- [note] Abstract "factor of 2" is the both-muon result; probe-only gain is 1.38.
+- [note] Fig. 6: the text's plateau for p_T > 3 GeV/c ("about 80%" for the two cut-based methods, "about 90%" for the Likelihood Ratio) matches the MC. The data plateaus (3.5–10 GeV/c bin, read off the figure) are lower: ≈0.67 (straight cuts) and ≈0.72 (N−1 iteration); Likelihood Ratio data ≈0.90–0.92 vs MC ≈0.97. See [open-questions](../wiki/synthesis/open-questions.md).
 - [note] Fig. 1 inset (1584, 15.36) differs from Table 1 basic (1656, 15.89): single fit vs average over fit models.
-- Route caveat: ScienceDirect served no HTML body; text from arXiv v3 HTML, rechecked against the publisher PDF ("±" rendered as "7" in its text layer). Publisher PDF saved by hand. The arXiv v3 PDF was not kept.
+- Route: Route 1 — ScienceDirect HTML in the user's Chrome, re-captured 2026-11-11 (Eq. 1, inline formulas and Table 1 checked against the publisher PDF, which agree with the HTML; publisher high-resolution figures gr1–gr7; vision descriptions 2026-11-11). The previous capture (2026-11-05) was Route 2 from the arXiv v3 HTML, because ScienceDirect then served no HTML body; it is quarantined in `_to_delete/huang2016-old/`. No number or statement changed between the two captures. The publisher PDF text layer renders "±" as "7" (font artefact). The arXiv v3 PDF was not kept.
 
 ## Relevance
 

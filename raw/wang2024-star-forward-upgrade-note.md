@@ -7,13 +7,13 @@ authors: "Zhen Wang (Shandong University) for the STAR Collaboration"
 journal: "EPJ Web of Conferences 296, 16003 (2024) — Quark Matter 2023 proceedings (Spin/EIC Physics section)"
 doi: 10.1051/epjconf/202429616003
 arxiv: none
-notes_updated: 2026-11-09
+notes_updated: 2026-11-11
 ingested_version: "publisher PDF (open access, CC BY 4.0; 4 pages; published online 2024-06-26), captured 2026-11-06 via Route 3"
 earlier_version: []
 later_version: []
 published_version: "EPJ Web of Conferences 296, 16003 (2024) -- this is the ingested version"
-version_facts: "No arXiv version found (title searches, 2026-11-06). The matching QM2023 talk slides (23 slides) exist and were consulted by the Layer-3 capture only for [note] items labelled 'from the talk slides'; they were not ingested in this repo."
-versions_checked: 2026-11-09
+version_facts: "No arXiv version found (title searches, 2026-11-06). The matching QM2023 talk slides (23 slides) exist and were consulted by the Layer-3 capture only for [note] items labelled 'from the talk slides'; they were not ingested in this repo. Route re-check 2026-11-11: EPJ Web of Conferences still serves PDF only (no HTML full text)."
+versions_checked: 2026-11-11
 ---
 
 # Wang 2024 — Curated Notes
@@ -67,7 +67,7 @@ Status report; methods described only qualitatively (CA tracking, π⁰ iterativ
 
 - Channel counts agree: ECal 1496 = 2 × 22 × 34; HCal 520 = 2 × 13 × 20.
 - Location agrees: "about 7 m" vs ECal front z = 710.16 cm, HCal front z = 782.63 cm.
-- ΔX ±60 cm side peaks ≈ half the width of one HCal half (13 × 9.99 cm = 129.9 cm).
+- ΔX ±60 cm side peaks are only approximately half the width of one HCal half (13 × 9.99 cm = 129.9 cm; half ≈ 65 cm).
 - η: paper 2.5 < η < 4 vs email "roughly 2.2 < eta < 4.3" — the 2.2 is the outer geometric corner (ECal corner η = 2.23, outer edge 2.46; HCal corner 2.27).
 - **ECal tower length:** QM2023 slides 33 cm vs email 37.73 cm stack depth — unexplained.
 - **ECal depth in λ:** slides 0.85 λ_I vs email 0.93 λ (recomputed from the layer stack: 0.90 λ_I); X₀ agrees (18 vs 18.1; recomputed 18.0).

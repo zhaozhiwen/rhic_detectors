@@ -81,7 +81,7 @@ Sources (details, DOIs and capture route in each `raw/<slug>-note.md` and in [wi
 ## What is not in this repo
 
 - **Paper PDFs and figure images.** They are not ours to redistribute, so `raw/assets/` is git-ignored and stays on the maintainer's machine. Figure embeds in `raw/<slug>.md` therefore show as broken images on GitHub; every figure keeps its caption and a description, and the DOI/arXiv links in each note lead to the original.
-- **Verbatim text.** Full sources are paraphrased; numbers, equations, tables and references are exact.
+- **Full sources (`raw/<slug>.md`, Layer 3).** Kept on the maintainer's machine only (git-ignored since 2026-11-11). The published notes (`raw/<slug>-note.md`) carry the key numbers, caveats and links to the original via DOI/arXiv; their "full source" links do not resolve on GitHub.
 - Facts stated by the maintainer that no source contains are cited as "Zhiwen, personal communication, <date>".
 
 ## Working with it

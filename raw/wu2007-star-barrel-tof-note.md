@@ -7,7 +7,7 @@ authors: "J. Wu, M. Xu (USTC), for the STAR Collaboration"
 journal: "J. Phys. G: Nucl. Part. Phys. 34 (2007) S729–S732 (Quark Matter 2006 proceedings)"
 doi: "10.1088/0954-3899/34/8/S83"
 arxiv: none
-notes_updated: 2026-11-10
+notes_updated: 2026-11-11
 ingested_version: "Publisher version of record (IOP PDF, cover page + pp. S729–S732), read 2026-11-05 via Route 3 (PDF only; Chrome, JLab institutional access)"
 earlier_version: []
 later_version: []
@@ -85,7 +85,7 @@ After several years of successful MRPC TOF prototype running in STAR, a full bar
 - **[source issue]** Coverage printed "η < 1"; should be |η| < 1.
 - **[source issue]** "sub-one 100 ps time resolution" garbled; means sub-100 ps.
 - **[source issue]** Even-page running head "J Wu an M Xu" (typo for "and").
-- **[source issue]** Unclear whether the ~85 ps "stop time resolution" is stop-only or total; literally stop-only. **[note]** If independent, d+Au total would be ≈120 ps (L3 arithmetic).
+- **[note]** Unclear whether the ~85 ps "stop time resolution" is stop-only or total; literally stop-only. If independent, d+Au total would be ≈120 ps (L3 arithmetic).
 - Gas differs: beam test 90/5/5 with SF₆; TOFr in STAR 95/5 without SF₆.
 - Fig. 1(b) black curve unexplained; y-axis "Energy loss" without unit.
 - Route caveat: Route 3 (PDF only); pdftotext dropped Ξ, Λ⁰, Ω glyphs — rendered pages used. Fig. 2 values read off the plot.

@@ -2,7 +2,7 @@
 title: STAR Endcap Electromagnetic Calorimeter (EEMC)
 tags: [experiment, detector, status]
 sources: [star2003-eemc.md, star2003-eemc-note.md, beddo2003-bemc.md, beddo2003-bemc-note.md, star2026-detector-status.md, star2026-detector-status-note.md]
-updated: 2026-11-09
+updated: 2026-11-11
 ---
 
 # STAR Endcap Electromagnetic Calorimeter (EEMC)
@@ -16,12 +16,12 @@ Pb/scintillator sampling calorimeter on the west poletip, 1.086 ≤ η ≤ 2.00,
 | Structure | two halves; total mass ≈ 25 000 kg (radiators + active elements) |
 | Stack | 23 × (4.57 mm Ca-loaded Pb + 2 × 0.5 mm stainless) + 24 × 4 mm SCSN-81 |
 | Depth | 21.4 X₀ (stated); ≈ 20.4 X₀ recomputed [note]; just under 1 λ_I |
-| Shower-max detector | scintillator triangular strips after the 5th radiator (≈ 5 X₀): u/v planes, 6864 strips; π⁰/γ discrimination |
+| Shower-max detector | scintillator triangular strips after the 5th radiator (≈ 5 X₀; depth in cm not checkable from the paper [note]): u/v planes, 6864 strips; π⁰/γ discrimination |
 | Pre/postshower | layers 1, 2 (pre) and last (post), MAPMT readout |
 | Light path | WLS fibre → clear fibre → mixer → one PMT per tower (EMI 9107B) on the rear of the poletip |
 | Electronics | reuses the BEMC tower electronics; SMD/pre/post via gated integrators; MAPMT data available at Level 2, not Level 0 |
 | Resolution | requirement σ_E/E ≤ 16%/√E + 2% |
-| Calibration | final ±2% absolute scale in situ (π⁰, Z⁰ peaks) |
+| Calibration | final ±2% absolute scale in situ from π⁰ and η⁰ mass peaks (§6 prints "Z⁰", a [source issue]; ρ± cross-check) [star2003-eemc-note](../../raw/star2003-eemc-note.md) |
 | Status (Oct 2026) | "All", in situ, no readout [star2026-detector-status-note](../../raw/star2026-detector-status-note.md) |
 
 Notes:
