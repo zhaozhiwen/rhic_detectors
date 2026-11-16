@@ -7,13 +7,14 @@ authors: "Zhen Wang (Shandong University) for the STAR Collaboration"
 journal: "EPJ Web of Conferences 296, 16003 (2024) — Quark Matter 2023 proceedings (Spin/EIC Physics section)"
 doi: 10.1051/epjconf/202429616003
 arxiv: none
-notes_updated: 2026-11-11
+notes_updated: 2026-11-16
 ingested_version: "publisher PDF (open access, CC BY 4.0; 4 pages; published online 2024-06-26), captured 2026-11-06 via Route 3"
-earlier_version: []
+earlier_version:
+  - "star2018-forward-upgrade-proposal (November 2018 STAR design proposal for the same forward upgrade; a separate document, not an earlier text of this one) -- ingested"
 later_version: []
 published_version: "EPJ Web of Conferences 296, 16003 (2024) -- this is the ingested version"
-version_facts: "No arXiv version found (title searches, 2026-11-06). The matching QM2023 talk slides (23 slides) exist and were consulted by the Layer-3 capture only for [note] items labelled 'from the talk slides'; they were not ingested in this repo. Route re-check 2026-11-11: EPJ Web of Conferences still serves PDF only (no HTML full text)."
-versions_checked: 2026-11-11
+version_facts: "No arXiv version found (title searches, 2026-11-06). The matching QM2023 talk slides (23 slides) exist and were consulted by the Layer-3 capture only for [note] items labelled 'from the talk slides'; they were not ingested in this repo. Route re-check 2026-11-11: EPJ Web of Conferences still serves PDF only (no HTML full text). The design stage of the same upgrade is the November 2018 STAR proposal, star2018-forward-upgrade-proposal (ingested 2026-11-16)."
+versions_checked: 2026-11-16
 ---
 
 # Wang 2024 — Curated Notes
@@ -71,7 +72,7 @@ Status report; methods described only qualitatively (CA tracking, π⁰ iterativ
 - η: paper 2.5 < η < 4 vs email "roughly 2.2 < eta < 4.3" — the 2.2 is the outer geometric corner (ECal corner η = 2.23, outer edge 2.46; HCal corner 2.27).
 - **ECal tower length:** QM2023 slides 33 cm vs email 37.73 cm stack depth — unexplained.
 - **ECal depth in λ:** slides 0.85 λ_I vs email 0.93 λ (recomputed from the layer stack: 0.90 λ_I); X₀ agrees (18 vs 18.1; recomputed 18.0).
-- **Readout end:** paper "SiPM readout electronics on the front face" vs email ECal WLS fibres "read out at the back" — cannot be resolved from these sources. See [open-questions](../wiki/synthesis/open-questions.md).
+- **Readout end:** paper "SiPM readout electronics on the front face" vs email ECal WLS fibres "read out at the back" — not resolvable from these two sources alone. The 2018 design proposal ([star2018-forward-upgrade-proposal-note](star2018-forward-upgrade-proposal-note.md)) mounts the ECal readout on the front face (FEE on the module front, light guide at the end of each fibre bundle), so the front face is probably right; **[note]** "at the back" may mean the module's own fibre end, turned toward the IP. Still not stated explicitly for the as-built detector. See [open-questions](../wiki/synthesis/open-questions.md) #15.
 
 ## Relevance
 
@@ -79,5 +80,5 @@ Most recent peer-reviewed description of the as-built STAR forward upgrade ([sta
 
 ## Related
 
-- Synthesis: [star-fcs](../wiki/synthesis/star-fcs.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [open-questions](../wiki/synthesis/open-questions.md)
-- Notes: [tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md) (2014 prototype) · [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) (2022 talk: specs, triggers, Run 22) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (construction specs) · [star2026-detector-status-note](star2026-detector-status-note.md)
+- Synthesis: [star-fcs](../wiki/synthesis/star-fcs.md) · [star-forward-tracking](../wiki/synthesis/star-forward-tracking.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [star2018-forward-upgrade-proposal-note](star2018-forward-upgrade-proposal-note.md) (2018 design proposal) · [tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md) (2014 prototype) · [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) (2022 talk: specs, triggers, Run 22) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (construction specs) · [star2026-detector-status-note](star2026-detector-status-note.md)

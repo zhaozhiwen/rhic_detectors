@@ -7,13 +7,14 @@ authors: "Carl Gagliardi (Texas A&M University)"
 venue: "STAR Juniors meeting, February 2022 (slides finalized 2022-02-12); not peer-reviewed"
 doi: none
 arxiv: none
-notes_updated: 2026-11-09
+notes_updated: 2026-11-16
 ingested_version: "talk-slide PDF, 52 slides (PDF created 2022-02-12 23:36 UTC), supplied by the repo author; captured 2026-11-06 via Route 3"
-earlier_version: []
+earlier_version:
+  - "star2018-forward-upgrade-proposal (November 2018 STAR design proposal for the same forward upgrade; a separate document, not an earlier text of this one) -- ingested"
 later_version: []
 published_version: "none -- internal collaboration talk slides, not peer-reviewed; published in this repo with Zhiwen's agreement"
-version_facts: "Slide footers: 'STAR Forward Upgrade - 2-22 Juniors - Carl Gagliardi'. Exact talk date and venue not printed. PDF title metadata 'Thinking About Run 22 Triggering' is a leftover from another file."
-versions_checked: 2026-11-09
+version_facts: "Slide footers: 'STAR Forward Upgrade - 2-22 Juniors - Carl Gagliardi'. Exact talk date and venue not printed. PDF title metadata 'Thinking About Run 22 Triggering' is a leftover from another file. The design stage of the same upgrade is the November 2018 STAR proposal, star2018-forward-upgrade-proposal (ingested 2026-11-16)."
+versions_checked: 2026-11-16
 ---
 
 # Gagliardi 2022 — Curated Notes
@@ -82,7 +83,7 @@ The forward upgrade adds tracking (Si FST + sTGC) and calorimetry (ECal + HCal w
 - **ECal tower length 33 cm vs 37.73 cm** — unexplained.
 - **ECal depth 0.85 λ_I vs 0.93 λ** (recomputed from layers ≈ 0.90 λ_I).
 - DEP boards (24 per half ECal, 9 per half HCal) appear only in the email.
-- Readout end not addressed in the talk; Wang 2024 says SiPM electronics "on the front face", the email says ECal fibres "read out at the back". See [open-questions](../wiki/synthesis/open-questions.md).
+- Readout end not addressed in the talk; Wang 2024 says SiPM electronics "on the front face", the email says ECal fibres "read out at the back". The 2018 design proposal ([star2018-forward-upgrade-proposal-note](star2018-forward-upgrade-proposal-note.md)) mounts the ECal readout on the front face (FEE on the module front, light guide at the end of each fibre bundle), so the front face is probably right; **[note]** "at the back" may mean the module's own fibre end, turned toward the IP. Still not stated explicitly for the as-built detector. See [open-questions](../wiki/synthesis/open-questions.md) #15.
 
 ## Relevance
 
@@ -90,5 +91,5 @@ Fullest single description of the as-built [star-fcs](../wiki/synthesis/star-fcs
 
 ## Related
 
-- Synthesis: [star-fcs](../wiki/synthesis/star-fcs.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [star-bemc](../wiki/synthesis/star-bemc.md) · [star-eemc](../wiki/synthesis/star-eemc.md) · [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-mtd](../wiki/synthesis/star-mtd.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [open-questions](../wiki/synthesis/open-questions.md)
-- Notes: [tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md) (2014 prototype) · [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) (QM2023 proceedings) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (construction specs) · [star2026-detector-status-note](star2026-detector-status-note.md)
+- Synthesis: [star-fcs](../wiki/synthesis/star-fcs.md) · [star-forward-tracking](../wiki/synthesis/star-forward-tracking.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [star-bemc](../wiki/synthesis/star-bemc.md) · [star-eemc](../wiki/synthesis/star-eemc.md) · [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-mtd](../wiki/synthesis/star-mtd.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [open-questions](../wiki/synthesis/open-questions.md)
+- Notes: [star2018-forward-upgrade-proposal-note](star2018-forward-upgrade-proposal-note.md) (2018 design proposal) · [tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md) (2014 prototype) · [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) (QM2023 proceedings) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (construction specs) · [star2026-detector-status-note](star2026-detector-status-note.md)

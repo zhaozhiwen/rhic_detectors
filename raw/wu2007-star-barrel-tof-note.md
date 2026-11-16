@@ -7,7 +7,7 @@ authors: "J. Wu, M. Xu (USTC), for the STAR Collaboration"
 journal: "J. Phys. G: Nucl. Part. Phys. 34 (2007) S729–S732 (Quark Matter 2006 proceedings)"
 doi: "10.1088/0954-3899/34/8/S83"
 arxiv: none
-notes_updated: 2026-11-11
+notes_updated: 2026-11-16
 ingested_version: "Publisher version of record (IOP PDF, cover page + pp. S729–S732), read 2026-11-05 via Route 3 (PDF only; Chrome, JLab institutional access)"
 earlier_version: []
 later_version: []
@@ -99,3 +99,4 @@ Bridge between the 2002 USTC prototypes and the as-built STAR barrel TOF: gives 
 - Synthesis: [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [open-questions](../wiki/synthesis/open-questions.md)
 - Notes: [shao2002-mrpc-beam-test-note](shao2002-mrpc-beam-test-note.md) (ref. [2], prototype beam test) · [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (final system, Table 1 includes these TOFr runs)
 - [schambach2006-star-tof-electronics-note](schambach2006-star-tof-electronics-note.md) — contemporary (2006) electronics design paper: readout chain, MRPC and tray construction, timing budget, cosmic stand; supplies the construction details this paper lacks (gaps excepted).
+- [kajimoto2009-star-tof-thesis-note](kajimoto2009-star-tof-thesis-note.md) — 2009 UT Austin PhD thesis: the TOFr prototype tray read by a 6-channel TFEE, production trays, module and tray QA, Run 8/9 commissioning.

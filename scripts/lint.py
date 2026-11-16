@@ -41,7 +41,7 @@ FENCE_RE = re.compile(r"^```")
 
 # Allowed values of the Layer 3 `source_type:` frontmatter field (CLAUDE.md,
 # "Public repo and git"). Extend here and in CLAUDE.md together.
-SOURCE_TYPES = {"paper", "email", "status-sheet", "talk-slides"}
+SOURCE_TYPES = {"paper", "thesis", "proposal", "email", "status-sheet", "talk-slides"}
 
 
 def strip_code(text):

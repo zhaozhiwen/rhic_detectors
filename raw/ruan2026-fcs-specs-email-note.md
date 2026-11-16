@@ -7,13 +7,13 @@ authors: "Lijuan Ruan (BNL)"
 venue: "email, 2026-10-29"
 doi: none
 arxiv: none
-notes_updated: 2026-11-09
+notes_updated: 2026-11-16
 ingested_version: "email as .docx (assets/ruan2026-fcs-specs-email/source.docx), converted to Markdown 2026-11-05; text verbatim except one corrected unit typo"
 earlier_version: []
 later_version: []
 published_version: "none -- private email, not peer-reviewed; published in this repo with Zhiwen's agreement"
-version_facts: "Email dated 2026-10-29. No section number '1.' in the original; the Overview heading was added in the conversion."
-versions_checked: 2026-11-09
+version_facts: "Email dated 2026-10-29. No section number '1.' in the original; the Overview heading was added in the conversion. Design-stage counterpart: the November 2018 STAR proposal, star2018-forward-upgrade-proposal (ingested 2026-11-16), which gives the same sampling fractions (0.20, 0.0145) and tower counts but 38 HCal layers and 74 DEP/ADC boards."
+versions_checked: 2026-11-16
 ---
 
 # Ruan 2026 — Curated Notes
@@ -77,7 +77,7 @@ The FCS is a Pb/scintillator shashlik ECal (18 X0, 5.5 cm towers, re-used PHENIX
 
 - **ECal tower length:** 37.73 cm here vs 33 cm in [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) (and the QM2023 slides quoted in [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md)) — unexplained.
 - **ECal depth:** 0.93 λ here vs 0.85 λ_I in the talk; recomputed from the layer stack ≈ 0.90 λ_I. X0 agrees (18.1 vs 18).
-- **Readout end:** ECal WLS fibres "read out at the back" here vs Wang 2024 "SiPM-based readout electronics on the front face"; **[note]** the Tsai 2015 prototype was read out upstream of the beam (front). Unresolved — see [open-questions](../wiki/synthesis/open-questions.md).
+- **Readout end:** ECal WLS fibres "read out at the back" here vs Wang 2024 "SiPM-based readout electronics on the front face"; **[note]** the Tsai 2015 prototype was read out upstream of the beam (front). The 2018 design proposal ([star2018-forward-upgrade-proposal-note](star2018-forward-upgrade-proposal-note.md)) mounts the ECal readout on the front face (FEE on the module front, light guide at the end of each fibre bundle), so the front face is probably right; **[note]** "at the back" may mean the module's own fibre end, turned toward the IP. Still not stated explicitly for the as-built detector. See [open-questions](../wiki/synthesis/open-questions.md) #15.
 - **η coverage:** "roughly 2.2 < eta < 4.3" here vs 2.5 < η < 4 in the paper and talk; the 2.2 is the outer geometric corner (ECal corner η = 2.23 at z = 710.16 cm, computed in the Wang 2024 and Gagliardi 2022 Layer-3 files), 2.5 roughly the full-azimuth edge.
 - Agree: channel counts 1496 / 520; ≈ 7 m location; PHENIX-module ECal; HCal 20 mm Fe / 3 mm Sc, 84 cm, ≈ 4.5 λ; two halves.
 - Versus the 2014 prototype ([tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md)): ECal technology, HCal absorber (Pb(Sb) 10 mm → steel 20 mm) and tower counts all changed; the WLS-plate HCal light collection and SiPM readout survived.
@@ -89,4 +89,4 @@ Reference for the as-built [star-fcs](../wiki/synthesis/star-fcs.md) geometry: l
 ## Related
 
 - Synthesis: [star-fcs](../wiki/synthesis/star-fcs.md) · [pi-mu-separation-calorimetry](../wiki/synthesis/pi-mu-separation-calorimetry.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [open-questions](../wiki/synthesis/open-questions.md)
-- Notes: [tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md) · [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) · [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) · [star2026-detector-status-note](star2026-detector-status-note.md)
+- Notes: [star2018-forward-upgrade-proposal-note](star2018-forward-upgrade-proposal-note.md) (2018 design proposal) · [tsai2015-fcs-prototype-note](tsai2015-fcs-prototype-note.md) · [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) · [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) · [star2026-detector-status-note](star2026-detector-status-note.md)

@@ -7,7 +7,7 @@ authors: "W.J. Llope (Rice University), for the STAR Collaboration"
 journal: "Nucl. Instrum. Meth. A 661 (2012) S110–S113 (RPC 2010 workshop proceedings)"
 doi: "10.1016/j.nima.2010.07.086"
 arxiv: none
-notes_updated: 2026-11-11
+notes_updated: 2026-11-16
 ingested_version: "Publisher version of record, read 2026-11-06 via Route 1 (ScienceDirect HTML in Chrome, JLab access), verified against the publisher PDF (4 pages)"
 earlier_version: []
 later_version: []
@@ -119,4 +119,5 @@ Primary single source for the as-built STAR barrel TOF counts (120 trays, 3840 M
 
 - Synthesis: [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-mtd](../wiki/synthesis/star-mtd.md) · [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [star-magnet-absorber](../wiki/synthesis/star-magnet-absorber.md) · [open-questions](../wiki/synthesis/open-questions.md)
 - Notes: [shao2002-mrpc-beam-test-note](shao2002-mrpc-beam-test-note.md) · [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md) · [ruan2009-mtd-concept-note](ruan2009-mtd-concept-note.md) (ref. [14], MTD concept and MTD7) · [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md) · [huang2016-mtd-muon-id-note](huang2016-mtd-muon-id-note.md) · [beddo2003-bemc-note](beddo2003-bemc-note.md) (BEMC part of the MTD absorber)
-- [schambach2006-star-tof-electronics-note](schambach2006-star-tof-electronics-note.md) — 2006 design paper on the same TINO/TDIG/TCPU/THUB electronics (board internals, HPTDC arithmetic, DAQ link); prints the pad as 3.3 cm × 6.1 cm vs 3.5 × 6.1 cm² here, and glass 0.7/0.55 mm vs 1.1/0.54 mm (unresolved, [open-questions](../wiki/synthesis/open-questions.md) #16)
+- [schambach2006-star-tof-electronics-note](schambach2006-star-tof-electronics-note.md) — 2006 design paper on the same TINO/TDIG/TCPU/THUB electronics (board internals, HPTDC arithmetic, DAQ link); prints the pad as 3.3 cm × 6.1 cm vs 3.5 × 6.1 cm² here, and glass 0.7/0.55 mm vs 1.1/0.54 mm (#16, closed 2026-11-16 in favour of this paper's glass and a 3.45 cm pad pitch)
+- [kajimoto2009-star-tof-thesis-note](kajimoto2009-star-tof-thesis-note.md) — 2009 UT Austin PhD thesis on the same system: tray box 241.3 × 21.6 × 8.9 cm, MRPC module 212 × 94 × 17.9 mm, pads 3.15 cm + 0.3 cm gap (pitch ≈ the 3.5 cm here), glass 1.1/0.54 mm (agrees), but 5 inner + 2 outer plates ⇒ 6 gaps vs "five gaps" here ([open-questions](../wiki/synthesis/open-questions.md) #21); same Run 8 (5 trays) / Run 9 (94 trays) history; tray QA and dead-channel statistics.

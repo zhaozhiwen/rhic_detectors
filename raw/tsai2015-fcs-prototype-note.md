@@ -7,13 +7,14 @@ authors: "O.D. Tsai et al. (21 authors; UCLA, BNL, Texas A&M, Penn State, Indian
 journal: "J. Phys.: Conf. Ser. 587 (2015) 012053 — 16th International Conference on Calorimetry in High Energy Physics (CALOR 2014)"
 doi: 10.1088/1742-6596/587/1/012053
 arxiv: none
-notes_updated: 2026-11-11
+notes_updated: 2026-11-16
 ingested_version: "IOP publisher PDF (open access, CC-BY 3.0; 11 PDF pages incl. IOP cover page), captured 2026-11-06 via Route 3"
 earlier_version: []
-later_version: []
+later_version:
+  - "star2018-forward-upgrade-proposal (November 2018 STAR proposal with the revised, cost-driven FCS design that replaced the 2014 concept; repeats the 2014 FNAL results; a separate document) -- ingested"
 published_version: "J. Phys.: Conf. Ser. 587 (2015) 012053 -- this is the ingested version"
-version_facts: "Conference proceedings of CALOR 2014. No arXiv version found (title-word and author searches, 2026-11-06). Describes the 2014 FCS prototype and the 2014 proposal, not the as-built FCS. Route re-check 2026-11-11: IOP still serves PDF only (no HTML full text)."
-versions_checked: 2026-11-11
+version_facts: "Conference proceedings of CALOR 2014. No arXiv version found (title-word and author searches, 2026-11-06). Describes the 2014 FCS prototype and the 2014 proposal, not the as-built FCS. Route re-check 2026-11-11: IOP still serves PDF only (no HTML full text). The revised FCS design is in the November 2018 STAR proposal, star2018-forward-upgrade-proposal (ingested 2026-11-16)."
+versions_checked: 2026-11-16
 ---
 
 # Tsai 2015 — Curated Notes
@@ -122,4 +123,4 @@ Design history of the [star-fcs](../wiki/synthesis/star-fcs.md): explains the or
 ## Related
 
 - Synthesis: [star-fcs](../wiki/synthesis/star-fcs.md) · [pi-mu-separation-calorimetry](../wiki/synthesis/pi-mu-separation-calorimetry.md) · [open-questions](../wiki/synthesis/open-questions.md)
-- Notes: [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) (as-built status 2024) · [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) (as-built specs, Run 22) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (construction specs) · [star2026-detector-status-note](star2026-detector-status-note.md) (FCS status October 2026)
+- Notes: [star2018-forward-upgrade-proposal-note](star2018-forward-upgrade-proposal-note.md) (2018 proposal: revised design, same 2014 test-beam results) · [wang2024-star-forward-upgrade-note](wang2024-star-forward-upgrade-note.md) (as-built status 2024) · [gagliardi2022-star-forward-upgrade-talk-note](gagliardi2022-star-forward-upgrade-talk-note.md) (as-built specs, Run 22) · [ruan2026-fcs-specs-email-note](ruan2026-fcs-specs-email-note.md) (construction specs) · [star2026-detector-status-note](star2026-detector-status-note.md) (FCS status October 2026)

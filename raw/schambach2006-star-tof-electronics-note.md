@@ -8,12 +8,12 @@ journal: "2006 IEEE Nuclear Science Symposium Conference Record, vol. 1, pp. 485
 doi: "10.1109/NSSMIC.2006.356203"
 url: "https://ieeexplore.ieee.org/document/4179042"
 arxiv: none
-notes_updated: 2026-11-10
+notes_updated: 2026-11-16
 ingested_version: "Publisher version of record, read 2026-11-10 via Route 1 (IEEE Xplore full-text HTML in Chrome, institutional access), every number and the formula checked against the publisher PDF (4 pages)"
 earlier_version: []
 later_version: []
 published_version: "2006 IEEE NSS Conference Record, vol. 1, pp. 485–488 -- this is the ingested version"
-version_facts: "IEEE Xplore document 4179042; ISBN 1-4244-0560-2 (print). HTML and PDF texts agree. No arXiv version recorded. Written during the barrel-TOF design phase (2006), before the final trays were installed; the as-built system is described in llope2012-star-mrpc-systems (ingested)."
+version_facts: "IEEE Xplore document 4179042; ISBN 1-4244-0560-2 (print). HTML and PDF texts agree. No arXiv version recorded. Written during the barrel-TOF design phase (2006), before the final trays were installed; the as-built system is described in llope2012-star-mrpc-systems (ingested) and in the 2009 PhD thesis of co-author K. Kajimoto, kajimoto2009-star-tof-thesis (ingested 2026-11-16)."
 versions_checked: 2026-11-10
 ---
 
@@ -46,7 +46,7 @@ The planned STAR TOF has 3840 six-pad MRPCs on 120 trays, 23040 channels. Each t
 | Trays | 120, as two adjoining cylindrical shells of 60; each shell spans ≈ 1 unit of η |
 | Channels | 23040 total; 192 per tray |
 | MRPC modules per tray | 32, 6 channels each |
-| Pad size | **3.3 cm × 6.1 cm** (see caveats: 3.5 × 6.1 cm² in Llope 2012) |
+| Pad size | **3.3 cm × 6.1 cm** (see caveats: 3.5 × 6.1 cm² in Llope 2012; 3.15 cm pads at 0.3 cm interval in Kajimoto 2009) |
 | Acceptance (Sec. I) | TOF barrel \|η\| ≤ ~1; fraction of identified kaons and protons doubles to > 95% inside it |
 
 **MRPC construction (Section II)**
@@ -125,12 +125,12 @@ The planned STAR TOF has 3840 six-pad MRPCs on 120 trays, 23040 channels. Each t
 ## Source issues and caveats
 
 - **[source issue]** "more that 95%" printed; "more than" meant (Sec. I).
-- **Pad size contradiction:** 3.3 cm × 6.1 cm here vs 3.5 × 6.1 cm² in [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (also co-authored by W. J. Llope). **[note]** Six 3.3 cm pads = 19.8 cm, six 3.5 cm pads = 21 cm; either fits across the tray only with the short side along φ, so the pad-orientation inference on [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) stands. Unresolved; see [open-questions](../wiki/synthesis/open-questions.md).
-- **Glass contradiction:** outer 0.7 mm / inner 0.55 mm here vs outer 1.1 mm / inner 0.54 mm in [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md). This paper is a 2006 design; Llope 2012 describes the as-built system, but neither says the glass changed. Unresolved.
+- **Pad size contradiction:** 3.3 cm × 6.1 cm here vs 3.5 × 6.1 cm² in [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (also co-authored by W. J. Llope). **[note]** Six 3.3 cm pads = 19.8 cm, six 3.5 cm pads = 21 cm; either fits across the tray only with the short side along φ, so the pad-orientation inference on [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) stands. **Update 2026-11-16:** [kajimoto2009-star-tof-thesis-note](kajimoto2009-star-tof-thesis-note.md) (Fig. 3.4, from the 2004 TOF proposal) gives pad width 3.15 cm with a 0.3 cm interval (pitch 3.45 cm ≈ Llope's 3.5 cm [note]) and states the pad row runs across the tray; the 3.3 cm here matches neither and is treated as superseded ([open-questions](../wiki/synthesis/open-questions.md) #16, closed).
+- **Glass contradiction:** outer 0.7 mm / inner 0.55 mm here vs outer 1.1 mm / inner 0.54 mm in [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md). This paper is a 2006 design; Llope 2012 describes the as-built system, but neither says the glass changed. **Update 2026-11-16:** [kajimoto2009-star-tof-thesis-note](kajimoto2009-star-tof-thesis-note.md) (Fig. 3.4, reproduced from the 2004 proposal) also gives 1.1 / 0.54 mm, so the values here stand alone and are treated as superseded (#16 closed).
 - **η per shell:** "about 1 unit" here vs ≈ 0.9 per tray in Llope 2012 and \|η\| < 0.9 as built in [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md); consistent with "about".
 - Fig. 1 draws half a tray (4 MRPC → 4 TINO → 4 TDIG, "96 CHAN"), matching the two data cables of 96 pads each; the text gives 8 TINO + 8 TDIG per tray. The TCPU–THUB label lists "DATA" twice (as printed).
 - Fig. 3 peak at −309.8 ps (constant offset, not discussed); RMS 99.5 > σ shows non-Gaussian tails.
-- Design-era paper: counts and construction numbers are plans as of 2006; Llope 2012 supersedes them where it gives a value, except where the two simply disagree (pad, glass) without explanation.
+- Design-era paper: counts and construction numbers are plans as of 2006; Llope 2012 supersedes them where it gives a value, except where the two simply disagree (pad, glass) without explanation; those two were settled on 2026-11-16 by [kajimoto2009-star-tof-thesis-note](kajimoto2009-star-tof-thesis-note.md) in favour of Llope 2012 (glass) and a 3.15 cm pad at 3.45 cm pitch.
 - Route caveat: Route 1 HTML checked against the PDF text layer; figures cropped from 300-dpi PDF renders (HTML GIFs too small).
 
 ## Relevance
@@ -140,4 +140,4 @@ The only ingested source that describes the BTOF readout boards in detail: NINO 
 ## Related
 
 - Synthesis: [star-barrel-tof](../wiki/synthesis/star-barrel-tof.md) · [star-daq-trigger](../wiki/synthesis/star-daq-trigger.md) · [mrpc-technology](../wiki/synthesis/mrpc-technology.md) · [rhic-detector-status](../wiki/synthesis/rhic-detector-status.md) · [open-questions](../wiki/synthesis/open-questions.md)
-- Notes: [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (as-built system; pad 3.5 vs 3.3 cm, glass 1.1/0.54 vs 0.7/0.55 mm) · [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md) (contemporary QM2006 overview, no construction details) · [shao2002-mrpc-beam-test-note](shao2002-mrpc-beam-test-note.md) (USTC prototype; same 0.22 mm fibre spacers) · [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md) (MTD read out with "STAR TOF" electronics)
+- Notes: [kajimoto2009-star-tof-thesis-note](kajimoto2009-star-tof-thesis-note.md) (2009 PhD thesis of co-author K. Kajimoto: as-built boards and their history TFEE → TAMP → TINO, TFEEb → TPMT → TPMD, TMIT → THUB; networks; tray QA; Run 8/9 status; pad 3.15 cm + 0.3 cm and glass 1.1/0.54 mm) · [llope2012-star-mrpc-systems-note](llope2012-star-mrpc-systems-note.md) (as-built system; pad 3.5 vs 3.3 cm, glass 1.1/0.54 vs 0.7/0.55 mm) · [wu2007-star-barrel-tof-note](wu2007-star-barrel-tof-note.md) (contemporary QM2006 overview, no construction details) · [shao2002-mrpc-beam-test-note](shao2002-mrpc-beam-test-note.md) (USTC prototype; same 0.22 mm fibre spacers) · [yang2014-mtd-cosmic-calibration-note](yang2014-mtd-cosmic-calibration-note.md) (MTD read out with "STAR TOF" electronics)
