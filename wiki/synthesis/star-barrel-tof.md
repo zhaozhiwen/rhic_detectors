@@ -2,7 +2,7 @@
 title: STAR Barrel Time-of-Flight (BTOF)
 tags: [experiment, detector, technology, status]
 sources: [shao2002-mrpc-beam-test.md, shao2002-mrpc-beam-test-note.md, wu2007-star-barrel-tof.md, wu2007-star-barrel-tof-note.md, llope2012-star-mrpc-systems.md, llope2012-star-mrpc-systems-note.md, ruan2009-mtd-concept.md, ruan2009-mtd-concept-note.md, yang2014-mtd-cosmic-calibration.md, yang2014-mtd-cosmic-calibration-note.md, beddo2003-bemc.md, beddo2003-bemc-note.md, star2026-detector-status.md, star2026-detector-status-note.md, schambach2006-star-tof-electronics.md, schambach2006-star-tof-electronics-note.md, kajimoto2009-star-tof-thesis.md, kajimoto2009-star-tof-thesis-note.md]
-updated: 2026-11-16
+updated: 2026-11-17
 ---
 
 # STAR Barrel Time-of-Flight (BTOF)
@@ -60,6 +60,27 @@ As built ([kajimoto2009-star-tof-thesis-note](../../raw/kajimoto2009-star-tof-th
 - 32 MRPCs in 2.4 m → one per ≈ 7.5 cm along z ✓.
 - 120 × 2.4 × 0.21 m ≈ 60 m² tray footprint vs ≈ 49 m² of pads.
 - Outer limit: BEMC front face at r = 223.5 cm [beddo2003-bemc-note](../../raw/beddo2003-bemc-note.md); both systems use 60 × 6° in φ ([star-bemc](star-bemc.md)).
+
+## Material budget (radiation lengths) [note]
+
+No source quotes an X₀ for the MRPC or the tray. The numbers below are **our estimate** (2026-11-17) from the published layer stack ([kajimoto2009-star-tof-thesis-note](../../raw/kajimoto2009-star-tof-thesis-note.md), Fig. 3.4; glass thicknesses also in [llope2012-star-mrpc-systems-note](../../raw/llope2012-star-mrpc-systems-note.md)) with standard radiation lengths; treat them as ±~1% X₀.
+
+| Layer (one MRPC module) | Thickness | X₀ used | % X₀ |
+|---|---|---|---|
+| Glass: 2 outer × 1.1 mm + 5 inner × 0.54 mm | 4.9 mm | ≈ 10.6 cm (soda-lime float glass, estimated from composition) | 4.6 |
+| Readout PCBs (FR4): 2 × 1.5 mm | 3.0 mm | 19.4 cm (G10) | 1.5 |
+| Copper pads (thickness not given; 35 µm/board, ~60% coverage assumed) | ~0.04–0.07 mm | 1.44 cm | 0.3–0.5 |
+| Mylar: 2 × 0.35 mm | 0.7 mm | 28.5 cm | 0.25 |
+| Honeycomb: 2 × 4 mm (Nomex-type, ~0.05 g/cm³ assumed) | 8 mm | — | ~0.1 |
+| Gas gaps 6 × 0.22 mm, graphite tape | 1.3 mm | — | ~0 |
+| **MRPC module total** | **17.9 mm** | | **≈ 7** |
+
+- The layers add up to 17.9 mm, the module thickness specified and measured in UT QA ([kajimoto2009-star-tof-thesis-note](../../raw/kajimoto2009-star-tof-thesis-note.md), Table 4.1), so the stack is complete.
+- Glass dominates (about two-thirds of the module's X₀).
+- **Comparison:** 5 cm of plastic scintillator (PVT, X₀ ≈ 42.5 cm) is ≈ 11.8% X₀; one MRPC module ≈ 0.6 of that, i.e. the material of ≈ 3 cm of plastic.
+- **Whole tray (rough):** add the 50 mil (1.27 mm) aluminium floor ≈ 1.4% X₀ and the 1/8" FR4 TINO lid ≈ 1.6% X₀ ([schambach2006-star-tof-electronics-note](../../raw/schambach2006-star-tof-electronics-note.md)), plus TDIG boards, cooling loop and cables (not quantified) → roughly ≥ 10% X₀ for material in front of the BEMC.
+- **Angle:** the MRPCs are tilted to be nearly projective, so the module is crossed close to normal incidence; the flat tray floor and lid are crossed at 1/sin θ (≈ 1.5× at |η| = 1).
+- Unknowns that move the total by a few tenths of a percent: copper thickness, honeycomb type, exact glass composition. A STAR GEANT geometry file or a TOF material note would settle them ([open-questions](open-questions.md)).
 
 ## Prototype history
 

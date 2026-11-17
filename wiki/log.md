@@ -4,6 +4,10 @@ Append-only record of wiki activity. Format: `## [YYYY-MM-DD] <type> | <title>` 
 
 ---
 
+## [2026-11-17] query | MRPC material budget in radiation lengths
+- Question: how thick is an STAR barrel-TOF MRPC in X₀, compared with 5 cm of plastic scintillator?
+- Answer filed as a derived [note] section "Material budget (radiation lengths)" on [star-barrel-tof](synthesis/star-barrel-tof.md): ≈ 7% X₀ per module (glass ≈ 4.6%, FR4 ≈ 1.5%, Cu ≈ 0.3–0.5%, Mylar ≈ 0.25%), layer sum = the 17.9 mm QA thickness; 5 cm PVT ≈ 11.8% X₀; whole tray roughly ≥ 10% X₀. No source quotes an X₀; new open question #26.
+
 ## [2026-11-16] ingest | STAR Forward Upgrade proposal (Nov 2018 review version)
 - Added: raw/star2018-forward-upgrade-proposal.md (Layer 3), raw/star2018-forward-upgrade-proposal-note.md (Layer 2), new synthesis page [star-forward-tracking](synthesis/star-forward-tracking.md). The STAR Collaboration, *The STAR Forward Calorimeter System and Forward Tracking System*, proposal, November 2018 (review version), 84 pp.; `source_type: proposal`. Public copy with the same file name: https://drupal.star.bnl.gov/STAR/files/Proposal.ForwardUpgrade.Nov_.2018.Review.pdf.
 - Route 3 (PDF only): local copy supplied by the repo author (Word-made PDF, clean text layer; printed page = PDF page); local backup `raw/assets/star2018-forward-upgrade-proposal/source.pdf` and `source.txt`. Later related STAR documents (STAR Note SN0648 "… beyond BES-II"; ForwardUpgrade.v20.pdf) are recorded in the note as not ingested; version relation unverified.
